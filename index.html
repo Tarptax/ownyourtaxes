@@ -1,9 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Own Your Taxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #0d3b66;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        hr {
+            margin: 50px 0;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 30px; text-align: center;">
+
+<body>
 
     <h1>Own Your Taxes</h1>
 
@@ -16,23 +59,36 @@
 
     <h2>Available Books</h2>
 
-    <p>
-        <a href="#">Own Your Taxes (Core Edition)</a>
-    </p>
+    <div class="books">
 
-    <p>
-        <a href="#">Own Your Taxes: Contractors Edition</a>
-    </p>
+        <div class="book">
+            <img src="contractor-cover.jpg" alt="Contractors Edition">
 
-    <p>
-        <a href="#">Own Your Taxes: Musicians Edition</a>
-    </p>
+            <h3>Contractors Edition</h3>
+
+            <a class="button" href="#">
+                View on Amazon
+            </a>
+        </div>
+
+        <div class="book">
+            <img src="musician-cover.jpg" alt="Musicians Edition">
+
+            <h3>Musicians Edition</h3>
+
+            <a class="button" href="#">
+                View on Amazon
+            </a>
+        </div>
+
+    </div>
 
     <hr>
 
     <h2>Coming Soon</h2>
 
     <p>
+        Own Your Taxes (Core Edition Refresh)<br>
         Small Business Edition<br>
         Online Sellers Edition
     </p>
@@ -42,8 +98,8 @@
     <h2>About the Author</h2>
 
     <p>
-        Bryan O'Connor, EA creates practical tax education
-        resources for self-employed professionals and business owners.
+        Bryan O'Connor, EA creates practical tax education resources
+        for self-employed professionals and business owners.
     </p>
 
     <hr>
