@@ -1,8 +1,9 @@
 
-<!DOCTYPE html>
-<html>
 <head>
     <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,8 +27,9 @@
         }
 
         .book img {
+            width: 100%;
             max-width: 280px;
-            max-height: 420px;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,.2);
         }
@@ -50,87 +52,44 @@
         hr {
             margin: 50px 0;
         }
+
+        /* MOBILE OPTIMIZATION */
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 35px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .book img {
+                max-width: 100%;
+            }
+
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
-
-<body>
-
-    <h1>Own Your Taxes</h1>
-
-    <p>
-        Practical tax guides for self-employed professionals and business owners.
-    </p>
-
-   
-    <hr>
-
-    <h2>Available Books</h2>
-
-    <div class="books">
-
-        <div class="book">
-            <img src="sbo-cover.jpg" alt="Small Business Edition">
-
-            <h3>Small Business Edition</h3>
-
-            <a class="button" href="https://www.amazon.com/dp/B0H6M22ND4" target="_blank">
-                View on Amazon
-            </a>
-        </div>
-
-        <div class="book">
-            <img src="contractor-cover.jpg" alt="Contractors Edition">
-
-            <h3>Contractors Edition</h3>
-
-            <a class="button" href="https://www.amazon.com/dp/B0H73LWXPS" target="_blank">
-                View on Amazon
-            </a>
-        </div>
-
-        <div class="book">
-            <img src="musician-cover.jpg" alt="Musicians Edition">
-
-            <h3>Musicians Edition</h3>
-
-            <a class="button" href="https://www.amazon.com/dp/B0H74L7LS4" target="_blank">
-                View on Amazon 
-            </a>
-        </div>
-
-    </div>
-
-    <hr>
-
-    <h2>Coming Soon</h2>
-
-    <p>
-        Online Sellers Edition
-    </p>
-
-    <hr>
-
-    <h2>About the Author</h2>
-
-    <p>
-     
-Bryan O'Connor is an Enrolled Agent specializing
-in tax education for self-employed professionals
-and business owners.
-
-    </p>
-
-    <hr>
-
-    <h2>Contact</h2>
-
-    <p>
-        
-<a href="mailto:contact@ownyourtaxes.com">
-        contact@ownyourtaxes.com
-    </a>
-
-    </p>
-
-</body>
-</html>
