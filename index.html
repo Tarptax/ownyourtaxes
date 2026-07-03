@@ -15,7 +15,7 @@
             padding: 30px;
             text-align: center;
             line-height: 1.6;
-            background-color: #000000;
+            background-color: #101010;
             color: #D1D5DB;
         }
         
@@ -25,10 +25,18 @@ h2, h3 {
 
 .contact-email {
     color: #E5E7EB;
-    font-size: 1.1em;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
 }
 
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
 
 .author-banner {
     margin: 40px 0;
@@ -182,15 +190,6 @@ a {
         </div>
 
     </div>
-
-    <hr>
-
-    <h2>Coming Soon</h2>
-
-    <p>
-        Online Sellers Edition
-    </p>
-
     
 <div class="author-banner">
     <img src="author-banner.jpg" alt="About the Author">
@@ -199,7 +198,8 @@ a {
     <h2>Contact</h2>
 
     <p>
-        <a href="mailto:contact@ownyourtaxes.com" class="contact-email">
+        <a class="contact-email"
+            href="mailto:contact@ownyourtaxes.com" class="contact-email">
             contact@ownyourtaxes.com
         </a>
     </p>
