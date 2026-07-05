@@ -19,6 +19,7 @@
             color: #D1D5DB;
         }
 
+       
 .tagline {
     color: #d4af37;
     text-transform: uppercase;
@@ -99,7 +100,19 @@ a {
     display: block;
     margin: 0 auto;
 }
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
         
         .books {
             display: flex;
