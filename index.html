@@ -22,13 +22,16 @@
 
        
 .tagline {
-    color: #d4af37;
+   
+ color: #d4af37;
     text-transform: uppercase;
-    letter-spacing: 0px;
-    font-size: 60px;  /* desktop size */
     text-align: center;
     margin-top: 1px;
     margin-bottom: 30px;
+    white-space: nowrap;
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
 
 }
         
@@ -183,17 +186,7 @@ a {
                 max-width: 320px;
                 margin: 0 auto;
             }
-
-          
-            .tagline {
-                white-space: nowrap;
-                font-size: 6vw;
-                letter-spacing: 0;
-                width: 100%;
-                max witdth 1200px
-            }
-
-
+                     
             .button {
                 display: block;
                 width: 100%;
