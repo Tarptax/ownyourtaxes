@@ -3,11 +3,19 @@
 <html>
 <head>
     <title>Own Your Taxes</title>
-    <link rel="stylesheetody>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <style>
+        /* paste the style block from index.html here */
+    </style>
 </head>
+
 <body>
-<p>">← Back to Home</a></p>
+
+<p>index.html</p>
+
 <h1>About Bryan O'Connor</h1>
+
 
 <p>
 I created Own Your Taxes to help everyday Americans better understand taxes without needing a background in accounting or tax law.
