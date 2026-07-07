@@ -3,16 +3,25 @@
 <html>
 <head>
     <title>About Bryan O'Connor | Own Your Taxes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  
- <style>
-     
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-   
-     body {
+
+        body {
             font-family: Arial, sans-serif;
             width: 100%;
             max-width: 1200px;
@@ -23,8 +32,7 @@ html, body {
             background-color: #050505;
             color: #D1D5DB;
         }
-
-       
+              
 .tagline {
    
  color: #d4af37;
@@ -32,7 +40,7 @@ html, body {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
- 
+   
     letter-spacing: 0;
     font-size: clamp(24px, 5vw, 60px);
 
@@ -81,7 +89,7 @@ h5 {
 }
 
 .author-banner {
-    margin: 15[x 0 40px 0;
+    margin: 40px 0;
 }
 
 .author-banner img {
@@ -91,23 +99,16 @@ h5 {
     display: block;
     margin: 0 auto;
 }
-
-.book-series-item .button {
-    margin-bottom: 10px;
+        
+.author-banner img {
+    transition: transform 0.3s ease;
 }
 
-.book-series-item {
-    margin-bottom: 35px;
+.author-banner img:hover {
+    transform: scale(1.01);
 }
 
-.book-series-item p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.95em;
-}
-
-     
+        
 a {
     color: #C9A24A;
     font-weight: bold;
@@ -161,6 +162,7 @@ a {
             box-shadow: 0 3px 10px rgba(0,0,0,.2);
         }
 
+       
         .button {
             display: inline-block;
             margin-top: 15px;
@@ -174,9 +176,13 @@ a {
             border-radius: 8px;
             font-weight: bold;
             transition: all .25s ease;
-            
         }
- .nav-button {
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
@@ -190,11 +196,7 @@ a {
             font-weight: bold;
             transition: all .25s ease;
         }
-        .button:hover {
-            background-color: #C9A24A;
-            color: #000;
-        }
-
+        
         hr {
             border: 0;
             height: 1px;
@@ -225,36 +227,39 @@ a {
                 max-width: 320px;
                 margin: 0 auto;
             }
-                     
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
             .button {
                 display: block;
                 width: 100%;
                 box-sizing: border-box;
                 padding: 14px;
-                            }
-           .nav-button {
-                padding: 8px 12px;
-               font-size: 0.9em;
-               margin-top: 5px;
-           }
-           .banner img,
-               .author-banner img {
+            }
+        
+             .banner img,
+             .author-banner img {
                width: 100%;
                max-width: 100%;
            }
 
-   
+ 
 
-        }
+       
     </style>
 </head>
 
 <body>
 
+   
 <div style="text-align:center;">
     <a class="nav-button" href="index.html">Home</a>
     <a class="nav-button" href="about.html">About</a>
-     <a class="nav-button" href="faq.html">FAQ</a>
+    <a class="nav-button" href="faq.html">FAQ</a>
 </div>
 
     
