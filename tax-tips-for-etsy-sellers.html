@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-etsy-sellers-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Etsy has made it easier than ever for creators, artists, crafters, makers,
+collectors, and small business owners to reach customers around the world.
+While many sellers begin as a hobby or side hustle, growing sales often
+bring additional financial and tax responsibilities.
+</p>
+
+<p>
+Developing strong recordkeeping habits and understanding basic business
+organization principles can help Etsy sellers stay informed, reduce stress,
+and prepare for tax season more efficiently.
+</p>
+
+<hr>
+
+<h2>Treat Your Shop Like a Business</h2>
+
+<p>
+One of the most valuable habits an Etsy seller can develop is viewing the
+shop as a business operation rather than simply an online storefront.
+</p>
+
+<p>
+Even a small shop can benefit from:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Consistent recordkeeping</li>
+    <li>Income tracking</li>
+    <li>Expense organization</li>
+    <li>Business planning</li>
+    <li>Regular financial reviews</li>
+</ul>
+
+<p>
+The earlier these habits are established, the easier it becomes to manage a
+growing business.
+</p>
+
+<hr>
+
+<h2>Track All Sources of Income</h2>
+
+<p>
+Many Etsy sellers receive income through multiple channels, including Etsy,
+direct sales, craft fairs, custom orders, social media, and personal
+websites.
+</p>
+
+<p>
+Maintaining records of all income sources can help create a more complete
+picture of business activity throughout the year.
+</p>
+
+<p>
+Consider tracking:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Etsy sales</li>
+    <li>Custom orders</li>
+    <li>Local market sales</li>
+    <li>Website sales</li>
+    <li>Social media sales</li>
+</ul>
+
+<hr>
+
+<h2>Understand Etsy Fees</h2>
+
+<p>
+Etsy sellers often encounter multiple fees associated with operating their
+shops.
+</p>
+
+<p>
+These may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Listing fees</li>
+    <li>Transaction fees</li>
+    <li>Payment processing fees</li>
+    <li>Advertising fees</li>
+    <li>Shipping-related fees</li>
+</ul>
+
+<p>
+Reviewing Etsy account statements regularly can help sellers maintain
+organized records of these business expenses.
+</p>
+
+<hr>
+
+<h2>Track Inventory and Supplies</h2>
+
+<p>
+Many Etsy businesses purchase materials and supplies throughout the year.
+Good records can help sellers understand costs, monitor inventory levels,
+and improve financial organization.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Raw materials</li>
+    <li>Craft supplies</li>
+    <li>Packaging materials</li>
+    <li>Shipping supplies</li>
+    <li>Product components</li>
+    <li>Labels and branding materials</li>
+</ul>
+
+<hr>
+
+<h2>Save Every Receipt</h2>
+
+<p>
+Receipt management is one of the most important habits for online sellers.
+</p>
+
+<p>
+Consider saving:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Supply receipts</li>
+    <li>Equipment purchases</li>
+    <li>Shipping expenses</li>
+    <li>Advertising expenses</li>
+    <li>Software subscriptions</li>
+    <li>Website-related expenses</li>
+</ul>
+
+<p>
+Many sellers find digital storage systems useful for organizing records.
+</p>
+
+<hr>
+
+<h2>Create Separate Business Accounts</h2>
+
+<p>
+Using dedicated bank accounts and payment methods for business transactions
+can simplify recordkeeping significantly.
+</p>
+
+<p>
+Separate accounts make it easier to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track income</li>
+    <li>Track expenses</li>
+    <li>Review financial performance</li>
+    <li>Prepare for tax season</li>
+</ul>
+
+<p>
+Mixing personal and business transactions often creates unnecessary
+complexity.
+</p>
+
+<hr>
+
+<h2>Review Your Shop Monthly</h2>
+
+<p>
+Many sellers focus heavily on creating products but spend little time
+reviewing business records.
+</p>
+
+<p>
+A monthly review can help you:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Organize receipts</li>
+    <li>Review income</li>
+    <li>Review expenses</li>
+    <li>Track inventory purchases</li>
+    <li>Monitor profitability</li>
+    <li>Identify unusual trends</li>
+</ul>
+
+<hr>
+
+<h2>Keep Digital Records Organized</h2>
+
+<p>
+Many Etsy transactions occur electronically, making digital organization
+especially important.
+</p>
+
+<p>
+Consider creating folders for:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income records</li>
+    <li>Etsy statements</li>
+    <li>Expense receipts</li>
+    <li>Shipping records</li>
+    <li>Advertising expenses</li>
+    <li>Tax documents</li>
+</ul>
+
+<p>
+Organized records can save substantial time later.
+</p>
+
+<hr>
+
+<h2>Plan Ahead for Taxes</h2>
+
+<p>
+Many Etsy sellers are surprised by tax responsibilities as sales begin to
+grow.
+</p>
+
+<p>
+Understanding concepts such as:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Estimated taxes</li>
+    <li>Recordkeeping requirements</li>
+    <li>Business expenses</li>
+    <li>Self-employment income</li>
+</ul>
+
+<p>
+can help sellers avoid surprises and make informed financial decisions.
+</p>
+
+<hr>
+
+<h2>Common Etsy Seller Mistakes</h2>
+
+<h3>Not Tracking Expenses</h3>
+
+<p>
+Small expenses can accumulate quickly. Consistent expense tracking creates a
+more accurate financial picture.
+</p>
+
+<h3>Ignoring Etsy Statements</h3>
+
+<p>
+Shop statements contain valuable information regarding sales activity and
+business costs.
+</p>
+
+<h3>Mixing Personal and Business Finances</h3>
+
+<p>
+Combining transactions can make recordkeeping more difficult and increase
+organizational challenges.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize an entire year's worth of activity at once can be
+overwhelming.
+</p>
+
+<h3>Not Understanding Profitability</h3>
+
+<p>
+Revenue and profit are not the same thing. Regular financial reviews can
+help sellers understand how their businesses are performing.
+</p>
+
+<hr>
+
+<h2>Etsy Seller Monthly Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review Etsy income.</li>
+    <li>□ Download Etsy statements.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Track inventory purchases.</li>
+    <li>□ Review shipping costs.</li>
+    <li>□ Categorize expenses.</li>
+    <li>□ Reconcile bank accounts.</li>
+    <li>□ Back up important records.</li>
+    <li>□ Review business performance.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Successful Etsy sellers often develop strong business habits in addition to
+their creative skills. Consistent recordkeeping, organized financial
+records, expense tracking, and regular reviews can make managing an Etsy
+business significantly easier.
+</p>
+
+<p>
+The goal is not simply to make sales. The goal is to build a business that
+is organized, informed, and prepared for long-term success.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered insurance, legal, tax, or financial
+advice. Insurance needs vary. Consider consulting a qualified insurance
+professional regarding your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
