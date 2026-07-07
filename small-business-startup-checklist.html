@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="common-small-business-mistakes-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Starting a business involves more than providing a product or service.
+Developing good organizational habits from the beginning can help simplify
+recordkeeping, improve financial awareness, and make tax season less
+stressful.
+</p>
+
+<p>
+Use this checklist as a starting point while building your business
+foundation.
+</p>
+
+<hr>
+
+<h2>Business Setup</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Choose a business name.</li>
+    <li>□ Determine your business structure.</li>
+    <li>□ Obtain any required licenses or permits.</li>
+    <li>□ Create a professional business email address.</li>
+    <li>□ Establish a business mailing address if needed.</li>
+</ul>
+
+<hr>
+
+<h2>Banking & Finances</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Open a dedicated business bank account.</li>
+    <li>□ Separate business and personal finances.</li>
+    <li>□ Consider a business credit card.</li>
+    <li>□ Create a simple budgeting system.</li>
+    <li>□ Establish a process for tracking income.</li>
+</ul>
+
+<hr>
+
+<h2>Recordkeeping System</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create digital folders for business records.</li>
+    <li>□ Develop a receipt storage system.</li>
+    <li>□ Create expense categories.</li>
+    <li>□ Establish a monthly recordkeeping routine.</li>
+    <li>□ Back up important documents regularly.</li>
+</ul>
+
+<hr>
+
+<h2>Income Tracking</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Save invoices and payment records.</li>
+    <li>□ Track all business income.</li>
+    <li>□ Review income records monthly.</li>
+    <li>□ Verify deposits regularly.</li>
+    <li>□ Maintain organized customer records.</li>
+</ul>
+
+<hr>
+
+<h2>Expense Tracking</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Save receipts for business purchases.</li>
+    <li>□ Categorize expenses consistently.</li>
+    <li>□ Review expenses monthly.</li>
+    <li>□ Track recurring subscriptions and services.</li>
+    <li>□ Maintain documentation for major purchases.</li>
+</ul>
+
+<hr>
+
+<h2>Vehicle & Mileage Records</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create a mileage tracking system.</li>
+    <li>□ Record business trips consistently.</li>
+    <li>□ Save vehicle-related receipts.</li>
+    <li>□ Review mileage logs monthly.</li>
+</ul>
+
+<hr>
+
+<h2>Tax Organization</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Learn the basics of estimated taxes.</li>
+    <li>□ Set aside money for future tax obligations.</li>
+    <li>□ Create a tax-related document folder.</li>
+    <li>□ Save important tax correspondence.</li>
+    <li>□ Review tax deadlines regularly.</li>
+</ul>
+
+<hr>
+
+<h2>Monthly Business Habits</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review income and expenses.</li>
+    <li>□ Reconcile bank accounts.</li>
+    <li>□ Save receipts and records.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Back up important files.</li>
+    <li>□ Review upcoming deadlines.</li>
+</ul>
+
+<hr>
+
+<h2>First-Year Goals</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Build consistent recordkeeping habits.</li>
+    <li>□ Maintain organized financial records.</li>
+    <li>□ Understand your business finances.</li>
+    <li>□ Stay on top of tax-related responsibilities.</li>
+    <li>□ Create systems that can grow with your business.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Many small business challenges can be reduced through good organization and
+consistent habits. Building a simple recordkeeping and financial management
+system from the beginning can save time, reduce stress, and provide a
+stronger foundation for future growth.
+</p>
+
+<p>
+The goal is not perfection—it's creating systems that help you stay
+organized, informed, and confident as your business develops.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This checklist is provided for educational
+purposes only and should not be considered tax, legal, or financial advice.
+Tax situations vary. Consider consulting a qualified tax professional
+regarding your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
