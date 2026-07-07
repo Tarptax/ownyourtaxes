@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="mileage-tracking-tips-banner.jpg" alt="Own Your Taxes">
+</div>
+
+
+<h2>Mileage Tracking Tips</h2>
+
+<p>
+For many business owners, contractors, freelancers, and gig workers,
+vehicle expenses can represent a significant business cost. Maintaining
+accurate mileage records can help improve organization and make tax
+preparation much easier.
+</p>
+
+<p>
+Unfortunately, many taxpayers wait until tax season to think about mileage
+tracking, making it difficult to recreate an entire year's worth of driving
+activities accurately.
+</p>
+
+<hr>
+
+<h2>Why Mileage Tracking Matters</h2>
+
+<p>
+Business mileage can accumulate quickly throughout the year. Keeping
+accurate records helps business owners monitor vehicle use, maintain better
+financial records, and prepare for tax season more efficiently.
+</p>
+
+<p>
+Consistent tracking is generally much easier than attempting to estimate
+mileage months later.
+</p>
+
+<hr>
+
+<h2>Who Should Track Mileage?</h2>
+
+<p>
+Mileage tracking may be beneficial for:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Independent contractors</li>
+    <li>Freelancers</li>
+    <li>Consultants</li>
+    <li>Gig workers</li>
+    <li>Real estate professionals</li>
+    <li>Self-employed individuals</li>
+    <li>Small business owners</li>
+</ul>
+
+<p>
+Anyone who regularly uses a vehicle for business purposes may benefit from
+maintaining accurate mileage records.
+</p>
+
+<hr>
+
+<h2>What Information Should Be Tracked?</h2>
+
+<p>
+A good mileage log typically includes:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of the trip</li>
+    <li>Destination</li>
+    <li>Business purpose</li>
+    <li>Beginning odometer reading</li>
+    <li>Ending odometer reading</li>
+    <li>Total business miles driven</li>
+</ul>
+
+<p>
+Recording this information as trips occur is usually more reliable than
+trying to remember details later.
+</p>
+
+<hr>
+
+<h2>Use Technology to Your Advantage</h2>
+
+<p>
+Many business owners now use smartphone apps or mileage tracking software to
+help automate the process.
+</p>
+
+<p>
+These tools can make it easier to record trips, categorize travel, and
+maintain organized records throughout the year.
+</p>
+
+<p>
+Even a simple spreadsheet or notebook can work if it is updated
+consistently.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Driving</h2>
+
+<p>
+One of the most important aspects of mileage tracking is distinguishing
+between business and personal travel.
+</p>
+
+<p>
+Maintaining clear records helps create a more accurate picture of vehicle
+usage and makes year-end reporting much easier.
+</p>
+
+<hr>
+
+<h2>Common Mileage Tracking Mistakes</h2>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Attempting to reconstruct months of driving activity from memory often leads
+to incomplete records and unnecessary frustration.
+</p>
+
+<h3>Failing to Record Trip Purposes</h3>
+
+<p>
+A mileage log should clearly document the business reason for each trip.
+</p>
+
+<h3>Being Inconsistent</h3>
+
+<p>
+Tracking mileage for a few weeks and then stopping can create gaps in
+records that are difficult to fill later.
+</p>
+
+<h3>Ignoring Short Trips</h3>
+
+<p>
+Small business-related trips can add up over the course of a year. Consistent
+tracking helps provide a more complete record.
+</p>
+
+<hr>
+
+<h2>Build a Simple Habit</h2>
+
+<p>
+The most effective mileage tracking systems are often the simplest. Consider
+making mileage tracking part of your normal routine by updating records
+immediately after each business trip or reviewing them at the end of each
+day.
+</p>
+
+<p>
+Small efforts throughout the year can prevent large headaches during tax
+season.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Good mileage tracking supports better recordkeeping, stronger organization,
+and easier tax preparation. Whether you use a mobile app, spreadsheet, or
+written log, consistency is the key to building reliable records.
+</p>
+
+<p>
+A few minutes spent tracking mileage today can save significant time and
+stress later.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>     
