@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="recordkeeping-checklist-banner1.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Use this checklist throughout the year to help keep your records organized
+and make tax season less stressful.
+</p>
+
+<hr>
+
+<h2>Income Records</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all business income received.</li>
+    <li>□ Save invoices and customer payment records.</li>
+    <li>□ Reconcile income with bank deposits.</li>
+    <li>□ Retain Forms 1099 and other income documents.</li>
+    <li>□ Maintain records for all payment platforms used.</li>
+</ul>
+
+<hr>
+
+<h2>Expense Records</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Save receipts for business purchases.</li>
+    <li>□ Organize expenses by category.</li>
+    <li>□ Retain invoices and bills.</li>
+    <li>□ Keep records of software subscriptions.</li>
+    <li>□ Track advertising and marketing expenses.</li>
+    <li>□ Review expenses monthly.</li>
+</ul>
+
+<hr>
+
+<h2>Banking & Financial Records</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Maintain separate business and personal accounts.</li>
+    <li>□ Save monthly bank statements.</li>
+    <li>□ Save business credit card statements.</li>
+    <li>□ Review transactions for accuracy.</li>
+    <li>□ Reconcile accounts regularly.</li>
+</ul>
+
+<hr>
+
+<h2>Vehicle & Mileage Records</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Record business mileage consistently.</li>
+    <li>□ Document the purpose of business trips.</li>
+    <li>□ Retain vehicle-related receipts.</li>
+    <li>□ Update mileage logs regularly.</li>
+</ul>
+
+<hr>
+
+<h2>Tax Planning</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Set aside money for tax obligations.</li>
+    <li>□ Track estimated tax payments.</li>
+    <li>□ Maintain copies of filed tax returns.</li>
+    <li>□ Save IRS correspondence and notices.</li>
+    <li>□ Review tax records before year-end.</li>
+</ul>
+
+<hr>
+
+<h2>Digital Organization</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create folders for each tax year.</li>
+    <li>□ Store digital copies of important documents.</li>
+    <li>□ Back up financial records regularly.</li>
+    <li>□ Organize receipts and statements by month.</li>
+    <li>□ Secure sensitive financial information.</li>
+</ul>
+
+<hr>
+
+<h2>Monthly Review Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review income records.</li>
+    <li>□ Review expense records.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Verify bank transactions.</li>
+    <li>□ File receipts and documents.</li>
+    <li>□ Review upcoming tax deadlines.</li>
+</ul>
+
+<hr>
+
+<h2>Year-End Review Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Verify income records are complete.</li>
+    <li>□ Organize all expense documentation.</li>
+    <li>□ Confirm estimated tax payment records.</li>
+    <li>□ Review bank and credit card statements.</li>
+    <li>□ Ensure mileage logs are complete.</li>
+    <li>□ Prepare records for tax season.</li>
+</ul>
+
+<hr>
+
+<p>
+<strong>Tip:</strong> The best recordkeeping system is the one you actually
+use consistently. Small weekly efforts can prevent major headaches during
+tax season.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
+  
