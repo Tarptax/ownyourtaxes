@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="new-contractor-quick-start-guide-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Starting work as an independent contractor can be exciting, but it also
+comes with new financial and recordkeeping responsibilities. Developing good
+habits early can make managing income, expenses, and taxes much easier in
+the future.
+</p>
+
+<p>
+Use this guide as a starting point for building an organized foundation as a
+new contractor.
+</p>
+
+<hr>
+
+<h2>Step 1: Separate Business and Personal Finances</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Open a dedicated business bank account.</li>
+    <li>□ Deposit contractor income into one account.</li>
+    <li>□ Avoid mixing business and personal purchases.</li>
+    <li>□ Keep business records separate from personal records.</li>
+</ul>
+
+<p>
+Separating finances makes recordkeeping easier and provides a clearer
+picture of your business activity.
+</p>
+
+<hr>
+
+<h2>Step 2: Track Your Income</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Record all payments received.</li>
+    <li>□ Save invoices and payment confirmations.</li>
+    <li>□ Compare deposits to your records regularly.</li>
+    <li>□ Maintain organized income documentation.</li>
+</ul>
+
+<p>
+Do not rely solely on year-end tax forms to track your income.
+</p>
+
+<hr>
+
+<h2>Step 3: Create an Expense Tracking System</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Save business receipts.</li>
+    <li>□ Create expense categories.</li>
+    <li>□ Track expenses consistently.</li>
+    <li>□ Review expenses each month.</li>
+</ul>
+
+<p>
+Consistent tracking is often much easier than trying to reconstruct expenses
+later.
+</p>
+
+<hr>
+
+<h2>Step 4: Track Mileage</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create a mileage log.</li>
+    <li>□ Record business trips regularly.</li>
+    <li>□ Document the purpose of each trip.</li>
+    <li>□ Save vehicle-related records.</li>
+</ul>
+
+<p>
+Developing a mileage tracking habit early can save significant time later.
+</p>
+
+<hr>
+
+<h2>Step 5: Learn the Basics of Estimated Taxes</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Understand that taxes may not be withheld from payments.</li>
+    <li>□ Learn about estimated tax obligations.</li>
+    <li>□ Set aside money for future tax responsibilities.</li>
+    <li>□ Monitor tax deadlines throughout the year.</li>
+</ul>
+
+<hr>
+
+<h2>Step 6: Build a Recordkeeping System</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create folders for income records.</li>
+    <li>□ Create folders for expenses.</li>
+    <li>□ Save digital copies of important documents.</li>
+    <li>□ Back up records regularly.</li>
+</ul>
+
+<p>
+Good recordkeeping habits can make tax season much less stressful.
+</p>
+
+<hr>
+
+<h2>Step 7: Establish a Monthly Routine</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review income.</li>
+    <li>□ Review expenses.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Reconcile bank accounts.</li>
+    <li>□ Review tax planning needs.</li>
+</ul>
+
+<p>
+Small monthly reviews often prevent large organizational challenges later.
+</p>
+
+<hr>
+
+<h2>First-Year Success Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Business and personal finances separated.</li>
+    <li>□ Income tracking system established.</li>
+    <li>□ Expense tracking system established.</li>
+    <li>□ Mileage logs maintained.</li>
+    <li>□ Tax planning process created.</li>
+    <li>□ Recordkeeping routine developed.</li>
+    <li>□ Important documents backed up.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Successful contractors often develop strong financial habits from the
+beginning. Tracking income, organizing expenses, maintaining records, and
+staying aware of tax responsibilities can make running your business much
+more manageable.
+</p>
+
+<p>
+The goal is not perfection—it's creating simple systems that help you stay
+organized, informed, and prepared throughout the year.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This guide is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
