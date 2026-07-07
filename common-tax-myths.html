@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="common-tax-myths-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Taxes are often surrounded by misinformation, outdated advice, and common
+misconceptions. Believing tax myths can lead to confusion, poor
+recordkeeping, and unnecessary stress during tax season.
+</p>
+
+<p>
+Understanding the facts behind some of the most common tax myths can help
+taxpayers make more informed decisions and better manage their financial
+responsibilities.
+</p>
+
+<hr>
+
+<h2>Myth #1: If I Don't Receive a Tax Form, I Don't Need to Report the Income</h2>
+
+<p>
+Many people believe income only needs to be reported if they receive a tax
+form such as a W-2 or 1099.
+</p>
+
+<p>
+In reality, maintaining accurate records of income throughout the year is an
+important part of financial organization. Relying solely on tax forms can
+result in incomplete records and confusion at tax time.
+</p>
+
+<hr>
+
+<h2>Myth #2: Small Cash Payments Don't Count</h2>
+
+<p>
+Some taxpayers assume that income received in cash does not need to be
+tracked or reported.
+</p>
+
+<p>
+Good recordkeeping practices include maintaining records of all business and
+self-employment income regardless of how payments are received.
+</p>
+
+<hr>
+
+<h2>Myth #3: I Can Wait Until Tax Season to Organize My Records</h2>
+
+<p>
+Many taxpayers postpone recordkeeping until filing deadlines approach.
+</p>
+
+<p>
+In reality, maintaining records throughout the year is typically much easier
+than attempting to reconstruct financial activity at the last minute.
+Consistent organization can save time and reduce stress.
+</p>
+
+<hr>
+
+<h2>Myth #4: Tax Planning Is Only for Large Businesses</h2>
+
+<p>
+Some people assume tax planning only benefits large companies.
+</p>
+
+<p>
+In reality, individuals, contractors, gig workers, freelancers, and small
+business owners can all benefit from maintaining organized records and
+reviewing their financial activities throughout the year.
+</p>
+
+<hr>
+
+<h2>Myth #5: Business and Personal Finances Can Be Mixed Together</h2>
+
+<p>
+Combining business and personal transactions may seem convenient, but it can
+make financial records more difficult to manage.
+</p>
+
+<p>
+Many business owners find that keeping finances separate improves
+organization and simplifies recordkeeping.
+</p>
+
+<hr>
+
+<h2>Myth #6: Tax Preparation and Tax Planning Are the Same Thing</h2>
+
+<p>
+Tax preparation generally focuses on filing returns using available
+information, while tax planning involves reviewing financial activity and
+maintaining organization throughout the year.
+</p>
+
+<p>
+Both are important, but they serve different purposes.
+</p>
+
+<hr>
+
+<h2>Myth #7: Keeping Every Receipt Means You're Organized</h2>
+
+<p>
+Simply saving receipts does not automatically create an effective
+recordkeeping system.
+</p>
+
+<p>
+Successful organization usually involves maintaining records in a way that
+allows documents and information to be located quickly when needed.
+</p>
+
+<hr>
+
+<h2>Myth #8: Tax Rules Are Too Complicated to Understand</h2>
+
+<p>
+While tax laws can be complex, many foundational concepts are easier to
+understand than people expect.
+</p>
+
+<p>
+Learning basic principles such as recordkeeping, organization, estimated
+taxes, and financial tracking can significantly improve confidence and
+reduce tax-related stress.
+</p>
+
+<hr>
+
+<h2>Myth #9: Good Recordkeeping Only Matters During Tax Season</h2>
+
+<p>
+Recordkeeping supports more than tax preparation. Organized financial
+records can help business owners monitor performance, identify trends, and
+make informed financial decisions throughout the year.
+</p>
+
+<p>
+Strong recordkeeping habits provide benefits long before tax season arrives.
+</p>
+
+<hr>
+
+<h2>Myth #10: It's Too Late to Improve My Tax Habits</h2>
+
+<p>
+Many taxpayers believe that if they have struggled with organization in the
+past, there is little value in making changes now.
+</p>
+
+<p>
+The best time to improve recordkeeping, organization, and financial habits
+is simply the moment you decide to start.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Tax myths often create unnecessary confusion and anxiety. Focusing on good
+recordkeeping, consistent organization, and reliable financial habits can
+help taxpayers make informed decisions and approach tax season with greater
+confidence.
+</p>
+
+<p>
+The more you learn about basic tax concepts, the easier it becomes to
+separate myth from reality.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
+    
