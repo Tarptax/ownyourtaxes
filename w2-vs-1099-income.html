@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="w2-vs-1099-income-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Many people earn income through traditional employment, independent
+contracting, freelance work, or a combination of several income sources.
+Understanding the difference between W-2 income and 1099 income can help
+taxpayers better manage recordkeeping, tax planning, and financial
+organization throughout the year.
+</p>
+
+<p>
+While both types of income may contribute to overall earnings, they often
+come with different responsibilities and recordkeeping needs.
+</p>
+
+<hr>
+
+<h2>What Is W-2 Income?</h2>
+
+<p>
+W-2 income is commonly associated with traditional employment. Employees
+typically receive a Form W-2 that reports compensation earned during the
+year.
+</p>
+
+<p>
+Many employees receive regular paychecks and may have certain taxes withheld
+throughout the year by their employer.
+</p>
+
+<hr>
+
+<h2>What Is 1099 Income?</h2>
+
+<p>
+1099 income is often associated with self-employment, contract work,
+freelancing, consulting, gig work, and other independent business
+activities.
+</p>
+
+<p>
+Individuals earning 1099 income are generally responsible for maintaining
+their own records and monitoring tax obligations throughout the year.
+</p>
+
+<hr>
+
+<h2>Common Sources of W-2 Income</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Traditional employment</li>
+    <li>Part-time employment</li>
+    <li>Seasonal employment</li>
+    <li>Corporate employment</li>
+    <li>Government employment</li>
+</ul>
+
+<hr>
+
+<h2>Common Sources of 1099 Income</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Independent contracting</li>
+    <li>Freelance work</li>
+    <li>Consulting services</li>
+    <li>Gig economy work</li>
+    <li>Online business activities</li>
+    <li>Self-employment</li>
+</ul>
+
+<hr>
+
+<h2>Key Recordkeeping Differences</h2>
+
+<p>
+Both W-2 earners and 1099 earners benefit from good recordkeeping, but the
+types of records maintained may differ.
+</p>
+
+<p>
+W-2 employees often focus on:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Pay stubs</li>
+    <li>Forms W-2</li>
+    <li>Tax documents</li>
+    <li>Benefit records</li>
+</ul>
+
+<p>
+Individuals earning 1099 income often maintain records related to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income received</li>
+    <li>Invoices</li>
+    <li>Business expenses</li>
+    <li>Mileage logs</li>
+    <li>Bank statements</li>
+    <li>Forms 1099 received</li>
+</ul>
+
+<hr>
+
+<h2>Can You Have Both?</h2>
+
+<p>
+Yes. Many individuals earn both W-2 and 1099 income during the same year.
+For example, someone may work a traditional job during the day while
+operating a side business, consulting practice, or gig activity outside of
+work hours.
+</p>
+
+<p>
+Maintaining organized records for all income sources can make financial
+management much easier.
+</p>
+
+<hr>
+
+<h2>Organization Tips</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Keep records for each income source separately.</li>
+    <li>□ Save tax forms as they are received.</li>
+    <li>□ Maintain organized digital files.</li>
+    <li>□ Track business income and expenses consistently.</li>
+    <li>□ Review financial records throughout the year.</li>
+</ul>
+
+<hr>
+
+<h2>Common Misunderstandings</h2>
+
+<h3>"Income Is Income"</h3>
+
+<p>
+While all income contributes to your overall financial picture,
+recordkeeping responsibilities can differ depending on how income is earned.
+</p>
+
+<h3>"I Only Need Records at Tax Time"</h3>
+
+<p>
+Good recordkeeping habits throughout the year generally make tax season much
+easier to manage.
+</p>
+
+<h3>"I Only Need to Track 1099 Forms"</h3>
+
+<p>
+Maintaining your own income records can help ensure financial information is
+complete and organized.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+W-2 income and 1099 income often involve different financial
+responsibilities, but both benefit from strong organizational habits and
+accurate recordkeeping.
+</p>
+
+<p>
+Understanding the differences between these income types can help taxpayers
+stay organized, make informed decisions, and approach tax season with
+greater confidence.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
