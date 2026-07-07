@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="common-small-business-mistakes-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<h2>Common Small Business Tax Mistakes</h2>
+
+<p>
+Starting and operating a small business requires wearing many hats. While
+most business owners focus on serving customers and growing revenue, tax
+responsibilities can sometimes be overlooked until problems arise.
+</p>
+
+<p>
+Fortunately, many common tax mistakes can be avoided through organization,
+planning, and a basic understanding of tax responsibilities throughout the
+year.
+</p>
+
+<hr>
+
+<h2>Mixing Personal and Business Finances</h2>
+
+<p>
+One of the most common mistakes new business owners make is using the same
+bank account or credit card for both personal and business expenses.
+</p>
+
+<p>
+Separating finances can simplify recordkeeping, improve organization, and
+make it easier to prepare tax returns.
+</p>
+
+<hr>
+
+<h2>Failing to Keep Good Records</h2>
+
+<p>
+Poor recordkeeping can make it difficult to accurately report income,
+identify deductible expenses, and support information reported on tax
+returns.
+</p>
+
+<p>
+Maintaining organized records throughout the year is often much easier than
+trying to reconstruct an entire year's worth of transactions when tax season
+arrives.
+</p>
+
+<hr>
+
+<h2>Ignoring Estimated Taxes</h2>
+
+<p>
+Many self-employed individuals and business owners receive income without
+tax withholding. As a result, they may need to make estimated tax payments
+during the year.
+</p>
+
+<p>
+Waiting until tax season to address tax obligations can lead to unexpected
+balances due and potential penalties.
+</p>
+
+<hr>
+
+<h2>Overlooking Legitimate Business Expenses</h2>
+
+<p>
+Many business owners miss deductions simply because they fail to track
+expenses consistently.
+</p>
+
+<p>
+Common deductible business expenses may include equipment, software,
+advertising, office supplies, professional services, and other ordinary and
+necessary business costs.
+</p>
+
+<hr>
+
+<h2>Claiming Expenses Without Documentation</h2>
+
+<p>
+While it is important to track deductible expenses, it is equally important
+to maintain supporting records.
+</p>
+
+<p>
+Receipts, invoices, statements, and other documentation can help support
+business expenses and improve the accuracy of financial records.
+</p>
+
+<hr>
+
+<h2>Waiting Until the Last Minute</h2>
+
+<p>
+Rushing to organize financial information shortly before filing deadlines
+can increase stress and make mistakes more likely.
+</p>
+
+<p>
+Reviewing income, expenses, and financial records regularly throughout the
+year often leads to a smoother tax preparation process.
+</p>
+
+<hr>
+
+<h2>Not Understanding Business Income Reporting</h2>
+
+<p>
+Some business owners assume they only need to report income shown on tax
+forms they receive. In reality, taxpayers are generally responsible for
+reporting taxable business income regardless of whether a tax form is
+received.
+</p>
+
+<p>
+Accurate income tracking helps ensure complete and consistent reporting.
+</p>
+
+<hr>
+
+<h2>Forgetting About State and Local Requirements</h2>
+
+<p>
+Tax obligations may exist at the federal, state, and local levels depending
+on a business's activities and location.
+</p>
+
+<p>
+Understanding all applicable filing and payment requirements can help
+prevent unexpected issues later.
+</p>
+
+<hr>
+
+<h2>Trying to Do Everything Alone</h2>
+
+<p>
+Many successful business owners recognize when they need assistance.
+Educational resources, professional guidance, and reliable recordkeeping
+systems can help make tax responsibilities more manageable.
+</p>
+
+<p>
+Seeking help when needed can often save time and reduce frustration.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Most small business tax mistakes stem from poor organization rather than
+complex tax rules. Developing strong recordkeeping habits, staying informed,
+and addressing tax responsibilities throughout the year can help business
+owners approach tax season with greater confidence.
+</p>
+
+<p>
+A little planning today can prevent a great deal of stress tomorrow.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
+  
