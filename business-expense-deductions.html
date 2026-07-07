@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="business-expense-deductions-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Business expenses are a normal part of operating a business. Understanding
+how expenses fit into your overall financial recordkeeping process can help
+business owners stay organized, monitor profitability, and prepare for tax
+season more efficiently.
+</p>
+
+<p>
+While every business is different, developing good habits for tracking and
+organizing expenses is an important part of managing business finances.
+</p>
+
+<hr>
+
+<h2>What Is a Business Expense?</h2>
+
+<p>
+Businesses often incur costs while providing products or services, serving
+customers, marketing their business, and maintaining operations.
+</p>
+
+<p>
+Common business expenses can include purchases related to running and
+managing a business throughout the year.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
+<hr>
+
+<h2>Why Expense Tracking Matters</h2>
+
+<p>
+Maintaining organized expense records can help business owners:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Monitor business profitability.</li>
+    <li>Prepare tax returns more efficiently.</li>
+    <li>Maintain organized financial records.</li>
+    <li>Support business decision-making.</li>
+    <li>Reduce stress during tax season.</li>
+</ul>
+
+<p>
+Consistent tracking is often easier than trying to recreate records later.
+</p>
+
+<hr>
+
+<h2>Common Business Expense Categories</h2>
+
+<p>
+Expenses vary by industry, but many businesses commonly track:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Advertising and marketing</li>
+    <li>Office supplies</li>
+    <li>Software and subscriptions</li>
+    <li>Professional services</li>
+    <li>Business insurance</li>
+    <li>Vehicle expenses</li>
+    <li>Travel expenses</li>
+    <li>Education and training</li>
+    <li>Equipment and technology</li>
+    <li>Communication expenses</li>
+</ul>
+
+<p>
+Using consistent categories throughout the year can simplify recordkeeping
+and financial reviews.
+</p>
+
+<hr>
+
+<h2>Save Supporting Documentation</h2>
+
+<p>
+Receipts, invoices, account statements, and other documentation are often an
+important part of an organized recordkeeping system.
+</p>
+
+<p>
+Many business owners now store documents digitally to make retrieval easier
+when needed.
+</p>
+
+<hr>
+
+<h2>Review Expenses Regularly</h2>
+
+<p>
+Monthly reviews can help identify missing receipts, uncategorized
+transactions, and unusual expenses.
+</p>
+
+<p>
+Regular reviews also provide a better understanding of where business funds
+are being spent.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Expenses</h2>
+
+<p>
+Keeping business and personal spending separate is one of the simplest ways
+to improve financial organization.
+</p>
+
+<p>
+Dedicated business accounts and payment methods often make recordkeeping
+significantly easier.
+</p>
+
+<hr>
+
+<h2>Common Expense Tracking Mistakes</h2>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Organizing an entire year's worth of expenses at the last minute can be
+overwhelming and increase the likelihood of missing information.
+</p>
+
+<h3>Losing Receipts</h3>
+
+<p>
+Missing documentation can make financial records more difficult to
+maintain and review.
+</p>
+
+<h3>Ignoring Small Purchases</h3>
+
+<p>
+Small expenses can accumulate quickly over time. Consistent tracking helps
+create a more complete financial picture.
+</p>
+
+<h3>Mixing Personal and Business Spending</h3>
+
+<p>
+Combining personal and business transactions often complicates
+recordkeeping and financial reviews.
+</p>
+
+<hr>
+
+<h2>Building Better Expense Habits</h2>
+
+<p>
+Many successful business owners establish a routine for reviewing expenses,
+saving receipts, and updating financial records throughout the year.
+</p>
+
+<p>
+Even a few minutes each month can help keep records current and organized.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Understanding business expenses begins with good organization and
+recordkeeping. Maintaining accurate records, reviewing expenses regularly,
+and developing consistent habits can support better financial management and
+make tax season easier to navigate.
+</p>
+
+<p>
+The goal is not simply tracking expenses—it's building a system that helps
+you understand and manage your business more effectively.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
