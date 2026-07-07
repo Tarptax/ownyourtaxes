@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="side-hustle-tax-basics-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Side hustles have become increasingly common as people look for additional
+income opportunities outside of traditional employment. Whether you drive,
+deliver, sell products online, freelance, consult, create content, or offer
+services in your spare time, understanding basic tax concepts can help you
+stay organized and avoid surprises during tax season.
+</p>
+
+<p>
+Many people start a side hustle for extra income without realizing that it
+often brings new recordkeeping and tax responsibilities. Building good
+habits early can make managing those responsibilities much easier.
+</p>
+
+<hr>
+
+<h2>What Is a Side Hustle?</h2>
+
+<p>
+A side hustle is generally an activity that generates income outside of a
+person's primary job or main source of earnings.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Freelance work</li>
+    <li>Consulting services</li>
+    <li>Gig economy work</li>
+    <li>Online selling</li>
+    <li>Content creation</li>
+    <li>Craft and handmade product sales</li>
+    <li>Pet sitting or home services</li>
+    <li>Photography and creative services</li>
+</ul>
+
+<hr>
+
+<h2>Track All Income</h2>
+
+<p>
+One of the most important responsibilities for side hustlers is maintaining
+accurate income records.
+</p>
+
+<p>
+Income may come from multiple sources, platforms, or clients throughout the
+year. Keeping complete records can help provide a more accurate picture of
+your business activity.
+</p>
+
+<p>
+Consider tracking:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Customer payments</li>
+    <li>Online platform income</li>
+    <li>Direct deposits</li>
+    <li>Cash payments</li>
+    <li>Payment app activity</li>
+</ul>
+
+<hr>
+
+<h2>Keep Business and Personal Finances Separate</h2>
+
+<p>
+Many side hustlers begin by running everything through personal accounts.
+While this may seem convenient at first, it often makes recordkeeping more
+difficult.
+</p>
+
+<p>
+A dedicated account for side-hustle activity can help:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track income more easily.</li>
+    <li>Track expenses more accurately.</li>
+    <li>Review financial activity.</li>
+    <li>Prepare for tax season.</li>
+</ul>
+
+<hr>
+
+<h2>Track Business Expenses</h2>
+
+<p>
+Many side hustles involve expenses that should be recorded throughout the
+year.
+</p>
+
+<p>
+Depending on the type of activity, expenses may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Supplies and materials</li>
+    <li>Advertising costs</li>
+    <li>Software subscriptions</li>
+    <li>Equipment purchases</li>
+    <li>Shipping expenses</li>
+    <li>Professional services</li>
+    <li>Business-related travel</li>
+</ul>
+
+<p>
+Consistent tracking is usually much easier than trying to gather records
+later.
+</p>
+
+<hr>
+
+<h2>Understand the Difference Between W-2 and Side-Hustle Income</h2>
+
+<p>
+Many side hustlers also work traditional jobs.
+</p>
+
+<p>
+When both employment income and side-hustle income exist during the same
+year, maintaining separate records can help keep finances organized and make
+tax preparation easier.
+</p>
+
+<p>
+Understanding where each type of income comes from is an important part of
+financial organization.
+</p>
+
+<hr>
+
+<h2>Save Receipts and Documentation</h2>
+
+<p>
+Good documentation supports strong recordkeeping habits.
+</p>
+
+<p>
+Consider saving:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Receipts</li>
+    <li>Invoices</li>
+    <li>Account statements</li>
+    <li>Payment confirmations</li>
+    <li>Mileage logs</li>
+    <li>Business correspondence</li>
+</ul>
+
+<p>
+Many people prefer digital storage systems because documents are easier to
+locate and organize.
+</p>
+
+<hr>
+
+<h2>Pay Attention to Recordkeeping Throughout the Year</h2>
+
+<p>
+A common mistake among new side hustlers is waiting until tax season to
+organize records.
+</p>
+
+<p>
+Instead, consider:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Reviewing records monthly.</li>
+    <li>Updating expense tracking regularly.</li>
+    <li>Saving receipts immediately.</li>
+    <li>Monitoring income sources.</li>
+    <li>Backing up important records.</li>
+</ul>
+
+<hr>
+
+<h2>Understand Basic Tax Planning Concepts</h2>
+
+<p>
+Many side hustles generate income without automatic withholding. As a
+result, understanding basic tax planning concepts can become increasingly
+important as income grows.
+</p>
+
+<p>
+Learning about estimated taxes, recordkeeping, and financial organization
+can help side hustlers better prepare for future responsibilities.
+</p>
+
+<hr>
+
+<h2>Common Side Hustle Mistakes</h2>
+
+<h3>Not Tracking Income</h3>
+
+<p>
+Some side hustlers rely entirely on year-end tax forms. Maintaining personal
+income records throughout the year is usually a better practice.
+</p>
+
+<h3>Ignoring Small Expenses</h3>
+
+<p>
+Small purchases can add up over time and are often forgotten when records
+are not maintained consistently.
+</p>
+
+<h3>Mixing Business and Personal Transactions</h3>
+
+<p>
+Combining transactions can make reviewing financial activity more difficult.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Recordkeeping is generally easier when performed throughout the year instead
+of all at once.
+</p>
+
+<hr>
+
+<h2>Side Hustle Monthly Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Record all income received.</li>
+    <li>□ Save receipts and documentation.</li>
+    <li>□ Review expenses.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Review account activity.</li>
+    <li>□ Organize digital records.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+A side hustle can be a great way to earn additional income, but it also
+creates new recordkeeping and organizational responsibilities. Tracking
+income, maintaining documentation, reviewing expenses, and staying organized
+throughout the year can make financial management much easier.
+</p>
+
+<p>
+The most successful side hustlers often treat their activities like a small
+business from day one. Good habits developed early can provide long-term
+benefits as income and opportunities grow.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
