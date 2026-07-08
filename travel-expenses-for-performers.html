@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="travel-expenses-for-performers-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Many performers spend a significant amount of time traveling for their work.
+Musicians, actors, comedians, speakers, dancers, and other entertainers may
+travel to venues, rehearsals, auditions, recording sessions, conferences,
+and special events throughout the year.
+</p>
+
+<p>
+Because travel often becomes a regular part of performance-related
+activities, maintaining organized travel records can be an important part of
+financial management and recordkeeping.
+</p>
+
+<hr>
+
+<h2>Why Travel Recordkeeping Matters</h2>
+
+<p>
+Travel activity can generate a large number of records over the course of a
+year.
+</p>
+
+<p>
+Maintaining organized records can help performers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Monitor business activity.</li>
+    <li>Track travel-related costs.</li>
+    <li>Stay organized throughout the year.</li>
+    <li>Review business profitability.</li>
+    <li>Prepare financial records more efficiently.</li>
+</ul>
+
+<hr>
+
+<h2>Common Types of Performance Travel</h2>
+
+<p>
+Travel needs vary depending on the profession and type of work being
+performed.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Live performances</li>
+    <li>Tours</li>
+    <li>Rehearsals</li>
+    <li>Recording sessions</li>
+    <li>Auditions</li>
+    <li>Industry conferences</li>
+    <li>Workshops and training events</li>
+    <li>Client meetings</li>
+</ul>
+
+<hr>
+
+<h2>Maintain a Travel Log</h2>
+
+<p>
+One of the best organizational habits performers can develop is maintaining
+a travel log throughout the year.
+</p>
+
+<p>
+Information commonly tracked may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of travel</li>
+    <li>Destination</li>
+    <li>Purpose of the trip</li>
+    <li>Associated event or performance</li>
+    <li>Supporting documentation</li>
+</ul>
+
+<p>
+Maintaining records at the time of travel is often easier than attempting to
+reconstruct information later.
+</p>
+
+<hr>
+
+<h2>Save Transportation Records</h2>
+
+<p>
+Performers may use a variety of transportation methods throughout the year.
+</p>
+
+<p>
+Consider organizing records related to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Airfare</li>
+    <li>Train travel</li>
+    <li>Bus transportation</li>
+    <li>Rideshare services</li>
+    <li>Taxis</li>
+    <li>Rental vehicles</li>
+    <li>Parking fees</li>
+    <li>Tolls</li>
+</ul>
+
+<p>
+Keeping transportation records together can make future reviews much easier.
+</p>
+
+<hr>
+
+<h2>Track Mileage</h2>
+
+<p>
+Many performers travel locally for rehearsals, performances, lessons,
+networking events, and business meetings.
+</p>
+
+<p>
+When driving for business-related activities, maintaining a mileage log can
+be an important recordkeeping habit.
+</p>
+
+<p>
+Mileage logs may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of travel</li>
+    <li>Business purpose</li>
+    <li>Starting mileage</li>
+    <li>Ending mileage</li>
+    <li>Total business miles</li>
+</ul>
+
+<hr>
+
+<h2>Organize Lodging Records</h2>
+
+<p>
+Travel often includes overnight stays for performances and events.
+</p>
+
+<p>
+Maintaining organized lodging documentation can help create a complete
+travel record.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Hotel confirmations</li>
+    <li>Receipts</li>
+    <li>Reservation records</li>
+    <li>Event schedules</li>
+</ul>
+
+<hr>
+
+<h2>Save Event Documentation</h2>
+
+<p>
+Travel records are often stronger when supported by documents related to the
+event itself.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Performance agreements</li>
+    <li>Contracts</li>
+    <li>Event schedules</li>
+    <li>Invoices</li>
+    <li>Performance confirmations</li>
+</ul>
+
+<p>
+Keeping travel and event records together can improve overall organization.
+</p>
+
+<hr>
+
+<h2>Create a Digital Travel Folder</h2>
+
+<p>
+Many performers find it helpful to create digital folders for each trip or
+event.
+</p>
+
+<p>
+A typical folder may contain:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Travel confirmations</li>
+    <li>Receipts</li>
+    <li>Contracts</li>
+    <li>Schedules</li>
+    <li>Payment records</li>
+    <li>Event information</li>
+</ul>
+
+<p>
+Digital organization can significantly reduce the time required to locate
+important documents.
+</p>
+
+<hr>
+
+<h2>Review Travel Activity Monthly</h2>
+
+<p>
+Travel records can accumulate quickly.
+</p>
+
+<p>
+A monthly review can help performers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Organize receipts.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Review upcoming travel.</li>
+    <li>□ Save event documentation.</li>
+    <li>□ Back up important records.</li>
+    <li>□ Verify travel information is complete.</li>
+</ul>
+
+<hr>
+
+<h2>Common Travel Recordkeeping Mistakes</h2>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Travel details can be difficult to remember months after an event has
+occurred.
+</p>
+
+<h3>Losing Receipts</h3>
+
+<p>
+Travel often generates numerous documents that can quickly become
+disorganized without a system.
+</p>
+
+<h3>Ignoring Small Expenses</h3>
+
+<p>
+Parking fees, tolls, and other smaller costs can easily be forgotten if they
+are not recorded promptly.
+</p>
+
+<h3>Failing to Document Trip Purpose</h3>
+
+<p>
+Recording why travel occurred can help create a more complete record.
+</p>
+
+<hr>
+
+<h2>Performer Travel Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Maintain a travel log.</li>
+    <li>□ Save transportation records.</li>
+    <li>□ Track mileage.</li>
+    <li>□ Organize lodging documentation.</li>
+    <li>□ Save performance agreements.</li>
+    <li>□ Store travel records digitally.</li>
+    <li>□ Review travel activity monthly.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Travel is often an essential part of a performer's career. Developing a
+system for tracking trips, organizing documents, and maintaining complete
+records can improve financial organization and make year-end reviews much
+easier.
+</p>
+
+<p>
+The best approach is to create consistent habits throughout the year so that
+important information is available whenever it is needed.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
