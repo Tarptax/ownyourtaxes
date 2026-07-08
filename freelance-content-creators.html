@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+.book-nav a {
+    white-space: nowrap;
+}
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a>
+</div>
+
+
+<h1 style="display:none;">Freelancers & Content Creators Edition</h1>    
+<div class="banner">
+    <img src="musicians-banner.jpg"> 
+</div>
+
+<div style="max-width:800px; margin:auto;">
+
+<img src="freelance-book-cover.jpg" alt="Freelancers & Content Creators" 
+style="width:500; max-width:100%; height:auto; border-radius:8px; margin-bottom:20px;">
+   
+  
+<h2>Freelancers & Content Creators Edition</h2>
+
+    <p>
+        The <strong>Freelancers &amp; Content Creators Edition</strong> is designed for self-employed
+        professionals who earn income through client work, content creation, digital products,
+        affiliate marketing, sponsorships, consulting, coaching, and other online business activities.
+    </p>
+
+    <p>
+        Whether you're serving clients, building an audience, selling digital products,
+        managing brand partnerships, or growing a creative business, this guide provides
+        practical tax education and simple systems to help you stay organized, understand
+        your numbers, and approach tax season with confidence.
+    </p>
+
+    <p>
+     <a class="button" href="https://www.amazon.com/dp/B0H74L7LS4" target="_blank">
+                View on Amazon
+            </a>
+    </p>
+
+    <h3>Who This Book Is For</h3>
+    <ul>
+        <li>Freelancers</li>
+        <li>Content Creators</li>
+        <li>Consultants</li>
+        <li>Coaches</li>
+        <li>Influencers</li>
+        <li>Writers</li>
+        <li>Designers</li>
+        <li>Photographers</li>
+        <li>Videographers</li>
+        <li>Affiliate Marketers</li>
+        <li>Online Entrepreneurs</li>
+        <li>Independent Contractors</li>
+    </ul>
+
+    <h3>Topics Covered</h3>
+    <ul>
+        <li>Understanding self-employment income</li>
+        <li>Income, expenses, and profit</li>
+        <li>Common business deductions</li>
+        <li>Bookkeeping fundamentals</li>
+        <li>Separating business and personal finances</li>
+        <li>Quarterly tax payments</li>
+        <li>Tax-saving habits and systems</li>
+        <li>Organizing records throughout the year</li>
+        <li>Preparing for tax season with confidence</li>
+    </ul>
+
+    <h3>Why This Edition Matters</h3>
+
+    <p>
+        Freelancers and content creators often earn income from multiple sources without taxes
+        being withheld. Client payments, sponsorships, affiliate commissions, digital product
+        sales, memberships, and advertising revenue can create unique tax challenges that many
+        self-employed professionals are never taught how to manage.
+    </p>
+
+    <p>
+        The <strong>Freelancers &amp; Content Creators Edition</strong> was written to provide
+        straightforward guidance, practical tax education, and simple financial systems
+        specifically designed for today's self-employed professionals. The goal is simple:
+        help you stay organized, understand your profit, reduce tax-season stress, and keep
+        more of what you earn.
+    </p>
+</div>
+<hr>
+
+<p>
+<a href="gig-workers.html">← Gig Workers</a>
+|
+<a href="small-business.html">Small Business →</a>
+</p>
+
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+<p class="book-nav">
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p></p>
+</footer>
+
+
+</body>
+
+</html>
+  
