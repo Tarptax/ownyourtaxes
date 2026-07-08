@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-doordash-drivers-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<h2>Tax Tips for DoorDash Drivers</h2>
+
+<p>
+DoorDash provides flexible opportunities for individuals who want to earn
+income on their own schedule. Whether DoorDash is your full-time occupation
+or a part-time side hustle, understanding basic recordkeeping and tax
+organization concepts can help make managing your finances significantly
+easier.
+</p>
+
+<p>
+Many drivers are surprised to learn that delivering food involves more than
+tracking earnings. Good recordkeeping, mileage tracking, expense management,
+and financial organization all play important roles throughout the year.
+</p>
+
+<hr>
+
+<h2>Understand Your Income Sources</h2>
+
+<p>
+DoorDash drivers may receive income from several different sources.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Delivery earnings</li>
+    <li>Customer tips</li>
+    <li>Promotions and incentives</li>
+    <li>Peak pay opportunities</li>
+    <li>Referral bonuses</li>
+</ul>
+
+<p>
+Maintaining complete records of all income can help create a more accurate
+picture of your business activity throughout the year.
+</p>
+
+<hr>
+
+<h2>Mileage Tracking Is Critical</h2>
+
+<p>
+For many DoorDash drivers, mileage tracking is one of the most important
+recordkeeping responsibilities.
+</p>
+
+<p>
+Business miles can accumulate quickly, especially for drivers who work
+multiple days each week.
+</p>
+
+<p>
+Consider tracking:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of each work session</li>
+    <li>Business purpose</li>
+    <li>Beginning mileage</li>
+    <li>Ending mileage</li>
+    <li>Total business miles driven</li>
+</ul>
+
+<p>
+Creating a consistent mileage-tracking habit can make year-end organization
+much easier.
+</p>
+
+<hr>
+
+<h2>Keep Vehicle Records Organized</h2>
+
+<p>
+Your vehicle is one of your most important business tools.
+</p>
+
+<p>
+Maintain organized records related to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Fuel purchases</li>
+    <li>Maintenance costs</li>
+    <li>Repair invoices</li>
+    <li>Insurance records</li>
+    <li>Tires and routine service</li>
+    <li>Vehicle-related documentation</li>
+</ul>
+
+<p>
+Keeping these records organized throughout the year can help simplify
+financial reviews and tax preparation.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+Many drivers find it helpful to maintain a dedicated account for DoorDash
+earnings and related expenses.
+</p>
+
+<p>
+Separate finances can make it easier to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track deposits</li>
+    <li>Monitor expenses</li>
+    <li>Review earnings</li>
+    <li>Prepare records for tax season</li>
+</ul>
+
+<p>
+When transactions are separated, financial organization often becomes much
+more manageable.
+</p>
+
+<hr>
+
+<h2>Save Expense Documentation</h2>
+
+<p>
+Maintaining receipts and supporting documentation is an important part of
+recordkeeping.
+</p>
+
+<p>
+Depending on your situation, documents may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Vehicle-related records</li>
+    <li>Phone expenses</li>
+    <li>Business supplies</li>
+    <li>Equipment purchases</li>
+    <li>Service-related expenses</li>
+</ul>
+
+<p>
+Digital storage systems can make receipts and records easier to organize and
+locate later.
+</p>
+
+<hr>
+
+<h2>Understand Independent Contractor Responsibilities</h2>
+
+<p>
+Many DoorDash drivers operate as independent contractors rather than
+traditional employees.
+</p>
+
+<p>
+As a result, drivers are often responsible for maintaining their own
+records, organizing financial information, and monitoring tax-related
+obligations throughout the year.
+</p>
+
+<p>
+Learning the basics of self-employment income and tax planning can help
+drivers avoid surprises later.
+</p>
+
+<hr>
+
+<h2>Review Earnings Regularly</h2>
+
+<p>
+Setting aside time each month to review financial information can help keep
+records accurate and current.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review earnings.</li>
+    <li>□ Review tips.</li>
+    <li>□ Update mileage records.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Review account activity.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<p>
+Regular reviews are often easier than trying to organize an entire year's
+worth of activity at once.
+</p>
+
+<hr>
+
+<h2>Common DoorDash Driver Mistakes</h2>
+
+<h3>Not Tracking Mileage</h3>
+
+<p>
+Mileage records are often overlooked, especially by new drivers.
+</p>
+
+<h3>Ignoring Small Expenses</h3>
+
+<p>
+Small costs can add up over time and may be forgotten if records are not
+maintained consistently.
+</p>
+
+<h3>Mixing Business and Personal Transactions</h3>
+
+<p>
+Combining transactions can make reviewing financial activity significantly
+more difficult.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to reconstruct income, expenses, and mileage months later can be
+challenging and time-consuming.
+</p>
+
+<hr>
+
+<h2>DoorDash Driver Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all earnings.</li>
+    <li>□ Track tips.</li>
+    <li>□ Maintain mileage logs.</li>
+    <li>□ Save receipts.</li>
+    <li>□ Organize vehicle records.</li>
+    <li>□ Review earnings monthly.</li>
+    <li>□ Back up important records.</li>
+    <li>□ Monitor tax planning needs.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Success as a DoorDash driver involves more than making deliveries. Strong
+recordkeeping habits, consistent mileage tracking, organized financial
+records, and regular reviews can help drivers stay informed and prepared
+throughout the year.
+</p>
+
+<p>
+The sooner these habits become part of your routine, the easier it becomes
+to manage your business activity and approach tax season with confidence.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
