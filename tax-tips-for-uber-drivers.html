@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-uber-drivers-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Driving for Uber offers flexibility and the opportunity to earn income on
+your own schedule. Whether you drive occasionally for extra cash or rely on
+Uber as a primary source of income, understanding basic recordkeeping and
+tax organization concepts can help make managing your finances much easier.
+</p>
+
+<p>
+Many new drivers focus primarily on earnings while overlooking the
+recordkeeping responsibilities that come with operating as an independent
+business. Building strong habits early can help reduce stress and simplify
+tax season.
+</p>
+
+<hr>
+
+<h2>Understand Your Income Sources</h2>
+
+<p>
+Uber drivers may receive income from multiple sources throughout the year.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Trip earnings</li>
+    <li>Customer tips</li>
+    <li>Bonuses and incentives</li>
+    <li>Promotional opportunities</li>
+    <li>Referral rewards</li>
+</ul>
+
+<p>
+Maintaining organized records of all earnings can help provide a complete
+picture of your business activity.
+</p>
+
+<hr>
+
+<h2>Mileage Tracking Is Essential</h2>
+
+<p>
+For many Uber drivers, mileage becomes one of the most important
+recordkeeping responsibilities.
+</p>
+
+<p>
+Business miles can accumulate quickly, especially for drivers who spend many
+hours on the road.
+</p>
+
+<p>
+A mileage log may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of the trip</li>
+    <li>Business purpose</li>
+    <li>Starting mileage</li>
+    <li>Ending mileage</li>
+    <li>Total miles driven</li>
+</ul>
+
+<p>
+Tracking mileage throughout the year is generally much easier than trying to
+reconstruct it later.
+</p>
+
+<hr>
+
+<h2>Keep Vehicle Records Organized</h2>
+
+<p>
+Your vehicle is one of the most important tools used in your rideshare
+business.
+</p>
+
+<p>
+Consider maintaining organized records for:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Fuel purchases</li>
+    <li>Vehicle maintenance</li>
+    <li>Repairs</li>
+    <li>Insurance records</li>
+    <li>Cleaning expenses</li>
+    <li>Tires and routine service</li>
+</ul>
+
+<p>
+Consistent organization can make financial reviews and tax preparation much
+more manageable.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+Many drivers find it helpful to use a dedicated account for Uber-related
+income and expenses.
+</p>
+
+<p>
+Separating transactions can make it easier to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track deposits</li>
+    <li>Review earnings</li>
+    <li>Monitor expenses</li>
+    <li>Review business activity</li>
+    <li>Prepare for tax season</li>
+</ul>
+
+<p>
+Mixing personal and business transactions can make recordkeeping more
+difficult.
+</p>
+
+<hr>
+
+<h2>Save Supporting Documentation</h2>
+
+<p>
+Strong recordkeeping depends on maintaining supporting documents throughout
+the year.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Bank statements</li>
+    <li>Vehicle records</li>
+    <li>Expense receipts</li>
+    <li>Insurance documents</li>
+    <li>Account summaries</li>
+    <li>Maintenance records</li>
+</ul>
+
+<p>
+Digital storage systems can help keep these documents organized and easily
+accessible.
+</p>
+
+<hr>
+
+<h2>Understand Independent Contractor Responsibilities</h2>
+
+<p>
+Many Uber drivers operate as independent contractors rather than traditional
+employees.
+</p>
+
+<p>
+As a result, drivers are generally responsible for maintaining their own
+records, monitoring financial activity, and staying aware of tax-related
+responsibilities throughout the year.
+</p>
+
+<p>
+Learning about self-employment income, estimated taxes, and financial
+organization can help drivers avoid surprises later.
+</p>
+
+<hr>
+
+<h2>Review Your Finances Monthly</h2>
+
+<p>
+A monthly review can help keep records current and organized.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review earnings.</li>
+    <li>□ Review tips.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Save receipts.</li>
+    <li>□ Review account activity.</li>
+    <li>□ Back up important records.</li>
+</ul>
+
+<p>
+Small monthly reviews often prevent larger organizational problems later.
+</p>
+
+<hr>
+
+<h2>Common Uber Driver Mistakes</h2>
+
+<h3>Not Tracking Mileage</h3>
+
+<p>
+Many drivers underestimate the importance of mileage records until tax
+season arrives.
+</p>
+
+<h3>Ignoring Vehicle Expenses</h3>
+
+<p>
+Vehicle-related costs can accumulate significantly over time, making
+consistent recordkeeping important.
+</p>
+
+<h3>Mixing Personal and Business Transactions</h3>
+
+<p>
+Combining transactions can make financial reviews far more complicated than
+necessary.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize months of records at the last minute can be stressful and
+time-consuming.
+</p>
+
+<hr>
+
+<h2>Uber Driver Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all earnings.</li>
+    <li>□ Track customer tips.</li>
+    <li>□ Maintain mileage logs.</li>
+    <li>□ Save receipts.</li>
+    <li>□ Organize vehicle records.</li>
+    <li>□ Review finances monthly.</li>
+    <li>□ Back up important documents.</li>
+    <li>□ Monitor tax planning needs.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Success as an Uber driver involves more than completing trips. Maintaining
+organized records, tracking mileage consistently, reviewing earnings
+regularly, and developing strong financial habits can make managing your
+business much easier.
+</p>
+
+<p>
+The earlier these habits become part of your routine, the easier it becomes
+to stay organized, understand your finances, and approach tax season with
+confidence.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
