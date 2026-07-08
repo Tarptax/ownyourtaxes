@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-ebay-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+eBay has provided opportunities for individuals and businesses to sell
+products online for decades. Some people use eBay to occasionally sell
+personal items, while others operate full-time ecommerce businesses through
+the platform.
+</p>
+
+<p>
+Regardless of the size of your operation, maintaining organized records and
+developing strong financial habits can help make managing your business
+easier and reduce stress during tax season.
+</p>
+
+<hr>
+
+<h2>Treat Your eBay Activity Like a Business</h2>
+
+<p>
+Many successful sellers develop business habits from the beginning,
+including organized recordkeeping, financial tracking, and regular reviews
+of business performance.
+</p>
+
+<p>
+Strong habits often include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income tracking</li>
+    <li>Expense organization</li>
+    <li>Inventory management</li>
+    <li>Monthly financial reviews</li>
+    <li>Document retention</li>
+</ul>
+
+<hr>
+
+<h2>Track All Sales Activity</h2>
+
+<p>
+Maintaining complete records of sales activity can help sellers better
+understand how their business is performing throughout the year.
+</p>
+
+<p>
+Consider tracking:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>eBay sales</li>
+    <li>Direct customer sales</li>
+    <li>Sales through other platforms</li>
+    <li>Refunds and returns</li>
+    <li>Customer payments</li>
+</ul>
+
+<p>
+Maintaining personal records can help sellers compare platform information
+with their own records when needed.
+</p>
+
+<hr>
+
+<h2>Monitor eBay Fees</h2>
+
+<p>
+Many sellers focus heavily on sales while overlooking platform fees.
+</p>
+
+<p>
+Common costs may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Final value fees</li>
+    <li>Store subscription fees</li>
+    <li>Promoted listing fees</li>
+    <li>Payment processing fees</li>
+    <li>Shipping-related costs</li>
+</ul>
+
+<p>
+Reviewing account statements regularly can help sellers understand how these
+costs affect overall profitability.
+</p>
+
+<hr>
+
+<h2>Maintain Inventory Records</h2>
+
+<p>
+Many eBay sellers purchase items specifically for resale.
+</p>
+
+<p>
+Maintaining organized inventory records can help with:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Tracking product purchases</li>
+    <li>Monitoring inventory levels</li>
+    <li>Understanding business performance</li>
+    <li>Planning future purchases</li>
+</ul>
+
+<p>
+Well-organized inventory records often become increasingly important as a
+business grows.
+</p>
+
+<hr>
+
+<h2>Save Shipping Records</h2>
+
+<p>
+Shipping is a major part of many eBay businesses.
+</p>
+
+<p>
+Consider retaining records for:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Postage purchases</li>
+    <li>Shipping labels</li>
+    <li>Packaging supplies</li>
+    <li>Tracking information</li>
+    <li>Shipping-related expenses</li>
+</ul>
+
+<p>
+Keeping these records organized can help simplify future reviews and
+financial management.
+</p>
+
+<hr>
+
+<h2>Save Receipts and Documentation</h2>
+
+<p>
+Strong recordkeeping depends on maintaining supporting documents throughout
+the year.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory purchase receipts</li>
+    <li>Packaging supply receipts</li>
+    <li>Shipping expenses</li>
+    <li>Equipment purchases</li>
+    <li>Software subscriptions</li>
+    <li>Office supply purchases</li>
+</ul>
+
+<p>
+Many sellers prefer digital storage systems because documents are easier to
+search and retrieve later.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+A dedicated business account can simplify recordkeeping and provide a
+clearer picture of business activity.
+</p>
+
+<p>
+Separate accounts can help sellers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track sales income.</li>
+    <li>Monitor expenses.</li>
+    <li>Review profitability.</li>
+    <li>Prepare for tax season.</li>
+    <li>Organize financial records.</li>
+</ul>
+
+<p>
+Mixing personal and business transactions often creates unnecessary
+organizational challenges.
+</p>
+
+<hr>
+
+<h2>Understand Form 1099-K</h2>
+
+<p>
+As sales activity grows, eBay sellers may become familiar with Form 1099-K
+and other tax-related reporting documents.
+</p>
+
+<p>
+Maintaining detailed records throughout the year can help sellers understand
+and verify information associated with platform activity.
+</p>
+
+<p>
+Good recordkeeping remains important regardless of which forms are received.
+</p>
+
+<hr>
+
+<h2>Review Your Business Monthly</h2>
+
+<p>
+Monthly reviews can help keep records accurate and organized.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review sales activity.</li>
+    <li>□ Review platform fees.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Review inventory levels.</li>
+    <li>□ Track shipping expenses.</li>
+    <li>□ Reconcile business accounts.</li>
+    <li>□ Back up important records.</li>
+</ul>
+
+<hr>
+
+<h2>Common eBay Seller Mistakes</h2>
+
+<h3>Ignoring Inventory Records</h3>
+
+<p>
+Inventory often represents a significant investment and should be tracked
+consistently.
+</p>
+
+<h3>Overlooking Platform Fees</h3>
+
+<p>
+Fees can have a meaningful impact on profitability and should be reviewed
+regularly.
+</p>
+
+<h3>Mixing Business and Personal Finances</h3>
+
+<p>
+Combining transactions can complicate financial reviews and recordkeeping.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize a full year of ecommerce activity all at once can be
+overwhelming and time-consuming.
+</p>
+
+<hr>
+
+<h2>eBay Seller Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all sales activity.</li>
+    <li>□ Monitor platform fees.</li>
+    <li>□ Maintain inventory records.</li>
+    <li>□ Save shipping documentation.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Separate business finances.</li>
+    <li>□ Review business performance monthly.</li>
+    <li>□ Back up important records.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Successful eBay sellers often dedicate as much effort to organization and
+recordkeeping as they do to finding products and making sales. Tracking
+income, monitoring fees, maintaining inventory records, and reviewing
+financial information regularly can help create a stronger and more
+sustainable business.
+</p>
+
+<p>
+The goal is not simply selling items online—it is building a business that
+remains organized, informed, and prepared for long-term success.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
