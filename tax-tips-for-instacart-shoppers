@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-instacart-shoppers-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<h2>Tax Tips for Instacart Shoppers</h2>
+
+<p>
+Instacart has created flexible earning opportunities for shoppers who enjoy
+working independently and setting their own schedules. While this flexibility
+can be appealing, many shoppers quickly discover that earning income through
+a delivery platform comes with additional recordkeeping and financial
+responsibilities.
+</p>
+
+<p>
+Developing good habits early can help Instacart shoppers stay organized,
+better understand their business activity, and make tax season much less
+stressful.
+</p>
+
+<hr>
+
+<h2>Understand Your Income Sources</h2>
+
+<p>
+Instacart shoppers may receive income from multiple sources related to their
+shopping and delivery activities.
+</p>
+
+<p>
+Maintaining complete income records throughout the year can help create a
+more accurate picture of overall earnings.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Shopping and delivery earnings</li>
+    <li>Customer tips</li>
+    <li>Promotional incentives</li>
+    <li>Bonus opportunities</li>
+</ul>
+
+<p>
+Good recordkeeping helps ensure all income is tracked and organized.
+</p>
+
+<hr>
+
+<h2>Track Business Mileage</h2>
+
+<p>
+For many Instacart shoppers, mileage tracking is one of the most important
+recordkeeping habits.
+</p>
+
+<p>
+Business miles can accumulate quickly throughout the year, especially for
+shoppers who work regularly.
+</p>
+
+<p>
+Consider maintaining records that include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of travel</li>
+    <li>Business purpose</li>
+    <li>Starting and ending mileage</li>
+    <li>Total business miles driven</li>
+</ul>
+
+<p>
+Consistent tracking is generally much easier than trying to recreate mileage
+records later.
+</p>
+
+<hr>
+
+<h2>Save Vehicle-Related Records</h2>
+
+<p>
+Many shoppers rely heavily on their vehicles while earning income.
+</p>
+
+<p>
+Maintaining organized records related to vehicle use can improve overall
+financial organization.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Fuel receipts</li>
+    <li>Maintenance records</li>
+    <li>Repair invoices</li>
+    <li>Insurance documents</li>
+    <li>Vehicle expense documentation</li>
+</ul>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+Using a dedicated account for Instacart-related income and expenses can
+simplify recordkeeping significantly.
+</p>
+
+<p>
+Separate accounts help shoppers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track earnings more easily.</li>
+    <li>Monitor expenses.</li>
+    <li>Review financial activity.</li>
+    <li>Prepare for tax season.</li>
+</ul>
+
+<p>
+Mixing personal and business activity can make organization much more
+difficult.
+</p>
+
+<hr>
+
+<h2>Maintain Expense Records</h2>
+
+<p>
+Many Instacart shoppers incur expenses while performing delivery services.
+</p>
+
+<p>
+Organized records may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Phone-related business expenses</li>
+    <li>Vehicle-related expenses</li>
+    <li>Equipment purchases</li>
+    <li>Business supplies</li>
+    <li>Service-related costs</li>
+</ul>
+
+<p>
+Maintaining records throughout the year often leads to better organization
+and easier financial reviews.
+</p>
+
+<hr>
+
+<h2>Understand Self-Employment Responsibilities</h2>
+
+<p>
+Many platform-based workers operate as independent contractors rather than
+traditional employees.
+</p>
+
+<p>
+As a result, recordkeeping, financial tracking, and tax planning become
+especially important.
+</p>
+
+<p>
+Learning about self-employment income and estimated tax concepts can help
+shoppers better prepare for future obligations.
+</p>
+
+<hr>
+
+<h2>Review Activity Monthly</h2>
+
+<p>
+A monthly review can help keep records current and prevent small issues from
+becoming larger problems.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review earnings.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Update mileage logs.</li>
+    <li>□ Review account activity.</li>
+    <li>□ Save important documents.</li>
+    <li>□ Back up records.</li>
+</ul>
+
+<hr>
+
+<h2>Common Instacart Shopper Mistakes</h2>
+
+<h3>Not Tracking Mileage</h3>
+
+<p>
+Mileage often becomes one of the largest recordkeeping areas for delivery
+workers. Failing to track it consistently can create challenges later.
+</p>
+
+<h3>Ignoring Tips</h3>
+
+<p>
+Tips may represent a significant portion of total earnings and should be
+tracked along with other income records.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize an entire year's worth of activity at once can be
+overwhelming.
+</p>
+
+<h3>Mixing Personal and Business Transactions</h3>
+
+<p>
+Keeping business activity separate can simplify reviews and recordkeeping.
+</p>
+
+<hr>
+
+<h2>Instacart Shopper Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all earnings.</li>
+    <li>□ Track tips.</li>
+    <li>□ Maintain mileage logs.</li>
+    <li>□ Save receipts.</li>
+    <li>□ Organize vehicle records.</li>
+    <li>□ Review activity monthly.</li>
+    <li>□ Back up important records.</li>
+    <li>□ Monitor tax planning needs.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Success as an Instacart shopper involves more than completing deliveries.
+Good recordkeeping, consistent mileage tracking, organized documentation,
+and regular financial reviews can help shoppers stay informed and prepared
+throughout the year.
+</p>
+
+<p>
+The earlier these habits are established, the easier it becomes to manage
+income and approach tax season with confidence.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
