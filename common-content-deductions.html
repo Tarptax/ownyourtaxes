@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="common-content-deductions-banner.jpg" alt="Own Your Taxes">
+</div>
+<h1>Common Content Creator Deductions</h1>
+<p>
+
+Content creators often invest significant time, effort, and money into
+building their platforms and producing content. Whether you create videos,
+podcasts, blogs, online courses, livestreams, or social media content,
+maintaining organized records of business-related expenses can help support
+strong financial management and recordkeeping practices.
+</p>
+
+<p>
+Understanding common expense categories can help creators develop better
+organizational systems and maintain a clearer picture of their business
+activity throughout the year.
+</p>
+
+<hr>
+
+<h2>Content Creation Is a Business</h2>
+
+<p>
+Many creators begin as hobbyists, but as revenue opportunities grow,
+content creation often develops into a business activity involving income,
+expenses, equipment, software, and ongoing operational costs.
+</p>
+
+<p>
+Strong recordkeeping begins with consistently tracking business-related
+expenses and maintaining supporting documentation throughout the year.
+</p>
+
+<hr>
+
+<h2>Camera & Recording Equipment</h2>
+
+<p>
+Equipment purchases are common among content creators.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Cameras</li>
+    <li>Video recording equipment</li>
+    <li>Microphones</li>
+    <li>Lighting equipment</li>
+    <li>Tripods</li>
+    <li>Audio interfaces</li>
+    <li>Recording accessories</li>
+</ul>
+
+<p>
+Maintaining receipts and purchase records can help keep equipment
+documentation organized.
+</p>
+
+<hr>
+
+<h2>Computers & Technology</h2>
+
+<p>
+Many creators rely heavily on technology to produce, edit, and distribute
+content.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Laptops</li>
+    <li>Desktop computers</li>
+    <li>Monitors</li>
+    <li>Storage devices</li>
+    <li>Tablets</li>
+    <li>Networking equipment</li>
+</ul>
+
+<p>
+Technology purchases often become an important part of a creator's
+recordkeeping system.
+</p>
+
+<hr>
+
+<h2>Software & Subscription Services</h2>
+
+<p>
+Recurring software expenses are common in many content creation businesses.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Video editing software</li>
+    <li>Audio editing software</li>
+    <li>Graphic design tools</li>
+    <li>Cloud storage services</li>
+    <li>Project management software</li>
+    <li>Email marketing platforms</li>
+</ul>
+
+<p>
+Reviewing subscription expenses regularly can help creators understand their
+ongoing business costs.
+</p>
+
+<hr>
+
+<h2>Internet & Communication Expenses</h2>
+
+<p>
+Content creators often depend on reliable communication and internet
+services.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Internet service</li>
+    <li>Business phone usage</li>
+    <li>Video conferencing platforms</li>
+    <li>Communication tools</li>
+</ul>
+
+<p>
+Maintaining organized records for these services can improve financial
+organization.
+</p>
+
+<hr>
+
+<h2>Website & Hosting Costs</h2>
+
+<p>
+Many creators maintain websites to showcase content, sell products, grow an
+audience, or provide business information.
+</p>
+
+<p>
+Common website-related expenses may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Website hosting</li>
+    <li>Domain registrations</li>
+    <li>Website themes</li>
+    <li>Website maintenance services</li>
+    <li>Security tools</li>
+</ul>
+
+<hr>
+
+<h2>Advertising & Promotion</h2>
+
+<p>
+Many creators invest in promoting their content and growing their audience.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Social media advertising</li>
+    <li>Search advertising</li>
+    <li>Promotional campaigns</li>
+    <li>Marketing software</li>
+    <li>Brand development expenses</li>
+</ul>
+
+<p>
+Organized records can help creators evaluate marketing efforts over time.
+</p>
+
+<hr>
+
+<h2>Education & Training</h2>
+
+<p>
+Professional development is an important part of many creator businesses.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Courses</li>
+    <li>Workshops</li>
+    <li>Conferences</li>
+    <li>Training programs</li>
+    <li>Educational subscriptions</li>
+</ul>
+
+<p>
+Maintaining documentation can help keep educational expenses organized.
+</p>
+
+<hr>
+
+<h2>Home Office Expenses</h2>
+
+<p>
+Many creators produce content from a home office or dedicated workspace.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Office furniture</li>
+    <li>Desk equipment</li>
+    <li>Workspace improvements</li>
+    <li>Office organizational supplies</li>
+</ul>
+
+<p>
+Maintaining records related to a dedicated workspace can support better
+organization throughout the year.
+</p>
+
+<hr>
+
+<h2>Travel & Event Expenses</h2>
+
+<p>
+Content creators may travel for conferences, networking opportunities,
+events, interviews, collaborations, or content production.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Transportation costs</li>
+    <li>Parking fees</li>
+    <li>Lodging records</li>
+    <li>Conference registration fees</li>
+    <li>Event-related expenses</li>
+</ul>
+
+<p>
+Travel documentation should be maintained and organized throughout the year.
+</p>
+
+<hr>
+
+<h2>Maintain Good Records</h2>
+
+<p>
+Regardless of the expense category, strong recordkeeping remains essential.
+</p>
+
+<p>
+Consider saving:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Receipts</li>
+    <li>Invoices</li>
+    <li>Bank statements</li>
+    <li>Subscription confirmations</li>
+    <li>Purchase records</li>
+    <li>Contracts and agreements</li>
+</ul>
+
+<p>
+The stronger the recordkeeping system, the easier financial reviews become.
+</p>
+
+<hr>
+
+<h2>Monthly Creator Expense Review</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Organize receipts.</li>
+    <li>□ Review software subscriptions.</li>
+    <li>□ Review equipment purchases.</li>
+    <li>□ Review advertising costs.</li>
+    <li>□ Save invoices and confirmations.</li>
+    <li>□ Review website expenses.</li>
+    <li>□ Update financial records.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<hr>
+
+<h2>Common Mistakes</h2>
+
+<h3>Not Saving Receipts</h3>
+
+<p>
+Many creators focus on producing content and forget to maintain supporting
+documentation.
+</p>
+
+<h3>Ignoring Small Expenses</h3>
+
+<p>
+Subscription services and recurring charges can add up significantly over
+time.
+</p>
+
+<h3>Mixing Business and Personal Purchases</h3>
+
+<p>
+Separate financial records often make organization much easier.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Organizing expenses throughout the year is generally easier than attempting
+to reconstruct records months later.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Content creators often incur a variety of expenses related to equipment,
+software, marketing, websites, education, and daily business operations.
+Understanding common expense categories and maintaining organized records
+can help creators better manage their business and maintain financial
+awareness throughout the year.
+</p>
+
+<p>
+The ultimate goal is not simply creating content—it is building an
+organized, sustainable business supported by strong recordkeeping and sound
+financial habits.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
