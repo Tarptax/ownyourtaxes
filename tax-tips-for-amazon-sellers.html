@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="tax-tips-for-amazon-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<h2>Tax Tips for Amazon Sellers</h2>
+
+<p>
+Selling on Amazon can create exciting opportunities for entrepreneurs,
+whether they are selling a handful of products each month or operating a
+growing online business. As sales increase, so do the recordkeeping and
+organizational responsibilities that come with running an ecommerce business.
+</p>
+
+<p>
+Understanding basic tax and recordkeeping concepts can help Amazon sellers
+stay organized, monitor business performance, and prepare for tax season
+more effectively.
+</p>
+
+<hr>
+
+<h2>Treat Your Amazon Business Like a Business</h2>
+
+<p>
+Many sellers begin by listing a few products and gradually grow into a
+larger operation. Regardless of size, maintaining business records from the
+beginning can make managing growth much easier.
+</p>
+
+<p>
+Strong business habits often include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income tracking</li>
+    <li>Expense organization</li>
+    <li>Inventory management</li>
+    <li>Monthly financial reviews</li>
+    <li>Recordkeeping systems</li>
+</ul>
+
+<hr>
+
+<h2>Track All Business Income</h2>
+
+<p>
+Amazon sellers should maintain organized records of income throughout the
+year.
+</p>
+
+<p>
+Income records may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Amazon marketplace sales</li>
+    <li>Direct customer sales</li>
+    <li>Website sales</li>
+    <li>Other ecommerce platform sales</li>
+</ul>
+
+<p>
+Maintaining your own records can help you better understand business
+performance and verify information as needed.
+</p>
+
+<hr>
+
+<h2>Monitor Amazon Fees</h2>
+
+<p>
+One area many new sellers underestimate is the impact of marketplace fees.
+</p>
+
+<p>
+Amazon-related costs may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Referral fees</li>
+    <li>Fulfillment fees</li>
+    <li>Storage fees</li>
+    <li>Subscription fees</li>
+    <li>Advertising expenses</li>
+</ul>
+
+<p>
+Reviewing account statements regularly can help sellers understand how
+business costs affect overall profitability.
+</p>
+
+<hr>
+
+<h2>Maintain Inventory Records</h2>
+
+<p>
+Inventory management is one of the most important organizational
+responsibilities for many Amazon sellers.
+</p>
+
+<p>
+Consider maintaining records for:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory purchases</li>
+    <li>Product quantities</li>
+    <li>Inventory received</li>
+    <li>Inventory sold</li>
+    <li>Inventory storage activity</li>
+</ul>
+
+<p>
+Organized inventory records can provide valuable insight into the business
+and support better planning decisions.
+</p>
+
+<hr>
+
+<h2>Save Receipts and Supporting Documentation</h2>
+
+<p>
+Many Amazon businesses generate a large number of transactions throughout
+the year.
+</p>
+
+<p>
+Examples of documents worth organizing include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory purchase receipts</li>
+    <li>Shipping records</li>
+    <li>Packaging supply receipts</li>
+    <li>Advertising expenses</li>
+    <li>Software subscription records</li>
+    <li>Equipment purchases</li>
+</ul>
+
+<p>
+Digital storage systems can help make these records easier to locate later.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+Maintaining separate accounts for business activity can simplify
+recordkeeping considerably.
+</p>
+
+<p>
+Dedicated business accounts can help sellers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track income more accurately.</li>
+    <li>Monitor expenses.</li>
+    <li>Review business performance.</li>
+    <li>Prepare records for tax season.</li>
+</ul>
+
+<p>
+Mixing personal and business transactions often creates unnecessary
+complexity.
+</p>
+
+<hr>
+
+<h2>Understand Form 1099-K</h2>
+
+<p>
+Many Amazon sellers become familiar with Form 1099-K as their business
+grows.
+</p>
+
+<p>
+Maintaining organized sales records and retaining copies of marketplace
+reports can help sellers compare information reported on tax forms to their
+own records.
+</p>
+
+<p>
+Good recordkeeping remains important regardless of which forms are received.
+</p>
+
+<hr>
+
+<h2>Review Your Business Monthly</h2>
+
+<p>
+A monthly review can help Amazon sellers stay organized and identify issues
+before they become larger problems.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review sales activity.</li>
+    <li>□ Review inventory levels.</li>
+    <li>□ Organize receipts.</li>
+    <li>□ Review advertising costs.</li>
+    <li>□ Categorize expenses.</li>
+    <li>□ Reconcile business accounts.</li>
+    <li>□ Back up important records.</li>
+</ul>
+
+<hr>
+
+<h2>Common Amazon Seller Mistakes</h2>
+
+<h3>Ignoring Inventory Records</h3>
+
+<p>
+Inventory often represents a significant portion of an Amazon business.
+Poor inventory tracking can create organizational challenges.
+</p>
+
+<h3>Not Reviewing Amazon Fees</h3>
+
+<p>
+Marketplace fees can have a meaningful impact on profitability and should be
+reviewed regularly.
+</p>
+
+<h3>Mixing Business and Personal Finances</h3>
+
+<p>
+Combining transactions can make recordkeeping and financial reviews more
+difficult.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize a year's worth of ecommerce activity at once can be
+overwhelming and time-consuming.
+</p>
+
+<hr>
+
+<h2>Amazon Seller Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track all sales activity.</li>
+    <li>□ Review marketplace fees.</li>
+    <li>□ Maintain inventory records.</li>
+    <li>□ Save receipts and documentation.</li>
+    <li>□ Separate business finances.</li>
+    <li>□ Review business performance monthly.</li>
+    <li>□ Back up important records.</li>
+    <li>□ Monitor tax planning needs.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Successful Amazon sellers often invest as much effort into organization and
+recordkeeping as they do into generating sales. Tracking income, monitoring
+inventory, reviewing fees, and maintaining accurate records can help create
+a stronger and more sustainable business.
+</p>
+
+<p>
+The goal is not simply selling products—it is building a business that is
+organized, informed, and prepared for long-term success.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
