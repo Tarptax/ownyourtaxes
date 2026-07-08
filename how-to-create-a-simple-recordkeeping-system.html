@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="how-to-create-a-simple-recordkeeping-system-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<h2>How to Create a Simple Recordkeeping System</h2>
+
+<p>
+One of the most valuable habits a business owner, contractor, freelancer,
+musician, online seller, gig worker, or content creator can develop is
+maintaining a simple recordkeeping system.
+</p>
+
+<p>
+Fortunately, a good system does not need to be complicated. The best
+recordkeeping systems are often the simplest because they are easy to use,
+easy to maintain, and sustainable throughout the year.
+</p>
+
+<p>
+The goal is not perfection. The goal is consistency.
+</p>
+
+<hr>
+
+<h2>Why Recordkeeping Matters</h2>
+
+<p>
+Organized records can help you:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track income accurately.</li>
+    <li>Monitor business expenses.</li>
+    <li>Review business performance.</li>
+    <li>Prepare for tax season.</li>
+    <li>Locate important documents quickly.</li>
+    <li>Reduce financial stress.</li>
+</ul>
+
+<p>
+Without a system, important information can become difficult to find when it
+is needed most.
+</p>
+
+<hr>
+
+<h2>Start With Four Core Categories</h2>
+
+<p>
+Most small businesses and self-employed individuals can begin with four
+basic recordkeeping categories:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income</li>
+    <li>Expenses</li>
+    <li>Banking Records</li>
+    <li>Tax Documents</li>
+</ul>
+
+<p>
+These categories provide a solid foundation and can be expanded later if
+necessary.
+</p>
+
+<hr>
+
+<h2>Create an Income Folder</h2>
+
+<p>
+Your income folder should contain records related to money received.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Invoices</li>
+    <li>Customer payments</li>
+    <li>Sales reports</li>
+    <li>Platform earnings reports</li>
+    <li>Forms 1099</li>
+</ul>
+
+<p>
+Keeping all income documentation together can make reviews much easier.
+</p>
+
+<hr>
+
+<h2>Create an Expense Folder</h2>
+
+<p>
+An expense folder helps track money spent while operating your business.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Receipts</li>
+    <li>Purchase confirmations</li>
+    <li>Equipment records</li>
+    <li>Subscription expenses</li>
+    <li>Office supply purchases</li>
+    <li>Vehicle-related expenses</li>
+</ul>
+
+<p>
+Saving documents as expenses occur can prevent them from being lost later.
+</p>
+
+<hr>
+
+<h2>Create a Banking Folder</h2>
+
+<p>
+Banking records often serve as a central part of a recordkeeping system.
+</p>
+
+<p>
+Consider maintaining:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Bank statements</li>
+    <li>Business account records</li>
+    <li>Credit card statements</li>
+    <li>Deposit records</li>
+    <li>Payment processor reports</li>
+</ul>
+
+<p>
+Monthly statement reviews can help identify missing transactions and improve
+accuracy.
+</p>
+
+<hr>
+
+<h2>Create a Tax Folder</h2>
+
+<p>
+A dedicated tax folder can simplify tax-season preparation.
+</p>
+
+<p>
+Examples of documents to save include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Tax returns</li>
+    <li>Forms W-2</li>
+    <li>Forms 1099</li>
+    <li>Estimated tax payment records</li>
+    <li>IRS correspondence</li>
+    <li>State tax notices</li>
+</ul>
+
+<p>
+Keeping tax-related documents organized throughout the year can save
+considerable time later.
+</p>
+
+<hr>
+
+<h2>Choose Digital, Paper, or Both</h2>
+
+<p>
+There is no single correct approach to recordkeeping.
+</p>
+
+<p>
+Some people prefer:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Digital folders</li>
+    <li>Paper filing systems</li>
+    <li>A combination of both</li>
+</ul>
+
+<p>
+The best system is usually the one that you will actually use consistently.
+</p>
+
+<hr>
+
+<h2>Use Consistent Naming Conventions</h2>
+
+<p>
+File names can make document retrieval much easier.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>2026-01 Bank Statement</li>
+    <li>Equipment Purchase May 2026</li>
+    <li>Client Invoice ABC Company</li>
+    <li>Tax Documents 2026</li>
+</ul>
+
+<p>
+Consistent file names reduce the time spent searching for records.
+</p>
+
+<hr>
+
+<h2>Create Monthly Business Reviews</h2>
+
+<p>
+Strong recordkeeping systems are maintained through regular reviews.
+</p>
+
+<p>
+A simple monthly review may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Reviewing income records.</li>
+    <li>Organizing receipts.</li>
+    <li>Reviewing bank statements.</li>
+    <li>Updating mileage logs.</li>
+    <li>Checking tax-related records.</li>
+</ul>
+
+<p>
+Monthly reviews are often easier than trying to organize an entire year's
+worth of activity at once.
+</p>
+
+<hr>
+
+<h2>Back Up Your Records</h2>
+
+<p>
+Protecting important records is just as important as organizing them.
+</p>
+
+<p>
+Backup options may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Cloud storage services</li>
+    <li>External hard drives</li>
+    <li>Secure document storage systems</li>
+</ul>
+
+<p>
+Regular backups can help prevent the loss of important business information.
+</p>
+
+<hr>
+
+<h2>A Simple Folder Example</h2>
+
+<p>
+Many business owners can begin with a structure similar to:
+</p>
+
+<pre>
+Business Records
+│
+├── Income
+├── Expenses
+├── Banking Records
+├── Tax Documents
+├── Mileage Logs
+└── Contracts & Invoices
+</pre>
+
+<p>
+A simple structure often works better than a complicated one.
+</p>
+
+<hr>
+
+<h2>Common Recordkeeping Mistakes</h2>
+
+<h3>Making the System Too Complicated</h3>
+
+<p>
+Complex systems often become difficult to maintain over time.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Organization is much easier when performed throughout the year.
+</p>
+
+<h3>Losing Receipts</h3>
+
+<p>
+Saving documents immediately can help prevent important records from being
+misplaced.
+</p>
+
+<h3>Not Backing Up Files</h3>
+
+<p>
+Important financial records should be protected against accidental loss.
+</p>
+
+<hr>
+
+<h2>Simple Recordkeeping Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Create income folders.</li>
+    <li>□ Create expense folders.</li>
+    <li>□ Organize banking records.</li>
+    <li>□ Organize tax documents.</li>
+    <li>□ Update records monthly.</li>
+    <li>□ Track mileage when applicable.</li>
+    <li>□ Save receipts and invoices.</li>
+    <li>□ Back up important records.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+The best recordkeeping system is not necessarily the most advanced one—it is
+the one that you can maintain consistently throughout the year. A simple
+structure for income, expenses, banking records, and tax documents can help
+keep important information organized and accessible.
+</p>
+
+<p>
+By dedicating a small amount of time each month to maintaining your records,
+you can reduce financial stress, improve organization, and make tax season
+significantly easier.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified professional regarding your
+specific circumstances.
+</p>
+
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
