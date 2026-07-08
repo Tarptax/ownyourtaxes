@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="inventory-tracking-basics-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Inventory is one of the most important assets for many online sellers,
+retailers, makers, resellers, and small business owners. Whether you sell on
+Amazon, eBay, Etsy, your own website, or in person, understanding basic
+inventory tracking concepts can help improve organization, support better
+purchasing decisions, and provide a clearer picture of business
+performance.
+</p>
+
+<p>
+Many sellers focus heavily on making sales but spend very little time
+tracking what they actually have available to sell. Developing a simple
+inventory tracking system can help reduce confusion and improve overall
+business management.
+</p>
+
+<hr>
+
+<h2>What Is Inventory?</h2>
+
+<p>
+Inventory generally consists of products, materials, or goods held for sale
+or used to create products for sale.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Retail products</li>
+    <li>Handmade goods</li>
+    <li>Resale inventory</li>
+    <li>Raw materials</li>
+    <li>Packaging supplies</li>
+    <li>Finished products</li>
+</ul>
+
+<p>
+Understanding what inventory exists within your business is the first step
+toward effective tracking.
+</p>
+
+<hr>
+
+<h2>Why Inventory Tracking Matters</h2>
+
+<p>
+Organized inventory records can help business owners:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Know what products are available for sale.</li>
+    <li>Avoid running out of popular items.</li>
+    <li>Reduce unnecessary purchases.</li>
+    <li>Monitor business performance.</li>
+    <li>Improve financial organization.</li>
+    <li>Prepare records more efficiently.</li>
+</ul>
+
+<p>
+Without inventory tracking, it becomes difficult to understand exactly what
+is being bought, sold, and stored.
+</p>
+
+<hr>
+
+<h2>Create an Inventory List</h2>
+
+<p>
+A simple inventory list can provide valuable insight into your business.
+</p>
+
+<p>
+Information commonly tracked may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Product name</li>
+    <li>Product identification number</li>
+    <li>Quantity on hand</li>
+    <li>Date acquired</li>
+    <li>Location stored</li>
+</ul>
+
+<p>
+Even a basic spreadsheet can help improve inventory visibility.
+</p>
+
+<hr>
+
+<h2>Track Inventory Purchases</h2>
+
+<p>
+Whenever inventory is acquired, maintain organized records of the purchase.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Supplier invoices</li>
+    <li>Purchase receipts</li>
+    <li>Shipping documentation</li>
+    <li>Order confirmations</li>
+    <li>Vendor information</li>
+</ul>
+
+<p>
+Consistently tracking purchases can help create a complete inventory history.
+</p>
+
+<hr>
+
+<h2>Track Inventory Sales</h2>
+
+<p>
+Inventory tracking is not just about what comes in—it is also about what
+goes out.
+</p>
+
+<p>
+Maintaining records of products sold can help sellers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Identify best-selling products.</li>
+    <li>Monitor inventory levels.</li>
+    <li>Plan future purchases.</li>
+    <li>Manage storage space.</li>
+</ul>
+
+<p>
+Regular reviews can help identify trends and potential issues.
+</p>
+
+<hr>
+
+<h2>Don't Forget Packaging Supplies</h2>
+
+<p>
+Many online sellers focus exclusively on products while overlooking
+packaging materials.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Boxes</li>
+    <li>Shipping envelopes</li>
+    <li>Tape</li>
+    <li>Labels</li>
+    <li>Protective packaging materials</li>
+</ul>
+
+<p>
+Tracking these supplies can help prevent shortages during busy sales
+periods.
+</p>
+
+<hr>
+
+<h2>Separate Inventory From Personal Property</h2>
+
+<p>
+As businesses grow, inventory can quickly occupy significant storage space.
+</p>
+
+<p>
+Keeping business inventory separate from personal belongings can improve
+organization and reduce confusion when reviewing inventory levels.
+</p>
+
+<hr>
+
+<h2>Perform Regular Inventory Reviews</h2>
+
+<p>
+Inventory records should be reviewed regularly rather than only at year-end.
+</p>
+
+<p>
+Monthly reviews may help identify:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Low stock levels</li>
+    <li>Missing products</li>
+    <li>Slow-moving inventory</li>
+    <li>Popular products</li>
+    <li>Recordkeeping errors</li>
+</ul>
+
+<p>
+Frequent reviews tend to be easier than large annual inventory projects.
+</p>
+
+<hr>
+
+<h2>Create Digital Records</h2>
+
+<p>
+Digital inventory systems can help streamline organization and improve
+accessibility.
+</p>
+
+<p>
+Many sellers maintain digital records of:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory counts</li>
+    <li>Supplier information</li>
+    <li>Purchase records</li>
+    <li>Product photographs</li>
+    <li>Sales information</li>
+</ul>
+
+<p>
+Backing up inventory records regularly can help protect valuable business
+information.
+</p>
+
+<hr>
+
+<h2>Common Inventory Tracking Mistakes</h2>
+
+<h3>Tracking Sales but Not Inventory</h3>
+
+<p>
+Some sellers know how much they sold but cannot quickly determine what
+inventory remains available.
+</p>
+
+<h3>Ignoring Packaging Supplies</h3>
+
+<p>
+Running out of shipping materials can create unnecessary delays and
+interrupt normal operations.
+</p>
+
+<h3>Not Saving Purchase Records</h3>
+
+<p>
+Inventory purchases should be documented and organized throughout the year.
+</p>
+
+<h3>Waiting Until Year-End</h3>
+
+<p>
+Inventory tracking is often easier when managed regularly rather than all at
+once.
+</p>
+
+<hr>
+
+<h2>Inventory Tracking Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Maintain an inventory list.</li>
+    <li>□ Track inventory purchases.</li>
+    <li>□ Track inventory sales.</li>
+    <li>□ Organize supplier records.</li>
+    <li>□ Review stock levels regularly.</li>
+    <li>□ Track packaging supplies.</li>
+    <li>□ Back up inventory records.</li>
+    <li>□ Perform monthly inventory reviews.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Inventory tracking is one of the most important organizational systems for
+many businesses. Understanding what products you have, what products are
+selling, and when inventory needs to be replenished can help improve
+decision-making and support long-term business success.
+</p>
+
+<p>
+The goal is not to create a complicated system—it is to create a consistent
+system that helps you stay organized, informed, and prepared throughout the
+year.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
