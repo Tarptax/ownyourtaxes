@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="royalties-and-music-income-basics-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+Many musicians earn income from more than performances and merchandise
+sales. As artists create, record, publish, and distribute music, additional
+income opportunities often become available through royalties and licensing
+arrangements.
+</p>
+
+<p>
+Understanding the basics of music-related income can help musicians better
+organize their records, monitor revenue streams, and gain a clearer picture
+of their overall business activity.
+</p>
+
+<hr>
+
+<h2>What Are Royalties?</h2>
+
+<p>
+Royalties are payments that may be earned when music is used, performed,
+distributed, streamed, licensed, or otherwise generates revenue.
+</p>
+
+<p>
+Depending on a musician's role in creating or owning the music, royalties
+can come from several different sources.
+</p>
+
+<p>
+For many artists, royalties represent recurring income that continues after
+a song, album, or project has been completed.
+</p>
+
+<hr>
+
+<h2>Why Income Tracking Matters</h2>
+
+<p>
+Musicians often have multiple revenue streams operating at the same time.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Live performances</li>
+    <li>Teaching income</li>
+    <li>Session work</li>
+    <li>Merchandise sales</li>
+    <li>Streaming revenue</li>
+    <li>Royalty payments</li>
+    <li>Licensing income</li>
+    <li>Content creation revenue</li>
+</ul>
+
+<p>
+Maintaining separate records for each category can make financial reviews
+much easier.
+</p>
+
+<hr>
+
+<h2>Performance Royalties</h2>
+
+<p>
+Performance royalties are commonly associated with music being publicly
+performed.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Radio broadcasts</li>
+    <li>Live venues</li>
+    <li>Streaming services</li>
+    <li>Television broadcasts</li>
+    <li>Public performances</li>
+</ul>
+
+<p>
+Musicians who receive performance royalties should maintain records of
+statements and payment activity throughout the year.
+</p>
+
+<hr>
+
+<h2>Mechanical Royalties</h2>
+
+<p>
+Mechanical royalties are commonly associated with the reproduction and
+distribution of music.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Physical music sales</li>
+    <li>Digital downloads</li>
+    <li>Certain streaming activities</li>
+</ul>
+
+<p>
+Artists and songwriters may encounter these royalty types as their music is
+distributed through various channels.
+</p>
+
+<hr>
+
+<h2>Streaming Revenue</h2>
+
+<p>
+Streaming income has become an increasingly important revenue source for many
+artists.
+</p>
+
+<p>
+Platforms may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Spotify</li>
+    <li>Apple Music</li>
+    <li>Amazon Music</li>
+    <li>YouTube Music</li>
+    <li>Other streaming services</li>
+</ul>
+
+<p>
+Because streaming payments are often received regularly over time,
+maintaining organized statements and payment records can be especially
+helpful.
+</p>
+
+<hr>
+
+<h2>Licensing Income</h2>
+
+<p>
+Music licensing can provide additional income opportunities beyond
+performances and streaming.
+</p>
+
+<p>
+Examples of licensed uses may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Television productions</li>
+    <li>Movies</li>
+    <li>Commercials</li>
+    <li>Video games</li>
+    <li>Podcasts</li>
+    <li>Online media projects</li>
+</ul>
+
+<p>
+Contracts, licensing agreements, and payment records should be organized and
+retained as part of a complete recordkeeping system.
+</p>
+
+<hr>
+
+<h2>Merchandise Sales Are Music Income Too</h2>
+
+<p>
+Many musicians focus exclusively on royalties while overlooking the
+importance of merchandise revenue.
+</p>
+
+<p>
+For some artists, merchandise can become one of the largest sources of
+business income.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>T-shirts</li>
+    <li>CDs</li>
+    <li>Vinyl records</li>
+    <li>Posters</li>
+    <li>Stickers</li>
+    <li>Branded accessories</li>
+</ul>
+
+<p>
+Maintaining records of merchandise sales, inventory purchases, and event
+sales can help provide a more complete picture of overall music-related
+income.
+</p>
+
+<hr>
+
+<h2>Save Royalty Statements</h2>
+
+<p>
+Royalty statements often provide valuable information regarding music income
+received throughout the year.
+</p>
+
+<p>
+Consider organizing:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Royalty statements</li>
+    <li>Payment confirmations</li>
+    <li>Distribution reports</li>
+    <li>Streaming summaries</li>
+    <li>Licensing documentation</li>
+</ul>
+
+<p>
+Maintaining these records can make future reviews much easier.
+</p>
+
+<hr>
+
+<h2>Create Separate Income Categories</h2>
+
+<p>
+Many musicians benefit from tracking revenue by category.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Performance Income</li>
+    <li>Teaching Income</li>
+    <li>Session Work</li>
+    <li>Merchandise Sales</li>
+    <li>Streaming Revenue</li>
+    <li>Royalties</li>
+    <li>Licensing Income</li>
+    <li>Content Creation Revenue</li>
+</ul>
+
+<p>
+Separate categories can provide better visibility into what parts of the
+business are generating income.
+</p>
+
+<hr>
+
+<h2>Monthly Music Income Review</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review royalty statements.</li>
+    <li>□ Review streaming reports.</li>
+    <li>□ Track merchandise sales.</li>
+    <li>□ Review performance income.</li>
+    <li>□ Organize licensing agreements.</li>
+    <li>□ Save payment confirmations.</li>
+    <li>□ Update income records.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<hr>
+
+<h2>Common Mistakes</h2>
+
+<h3>Combining All Income Into One Category</h3>
+
+<p>
+Different revenue streams can provide valuable information about business
+performance when tracked separately.
+</p>
+
+<h3>Ignoring Merchandise Revenue</h3>
+
+<p>
+Merchandise often represents a meaningful source of income and should be
+reviewed alongside other music-related revenue.
+</p>
+
+<h3>Not Saving Royalty Statements</h3>
+
+<p>
+Statements can help musicians monitor income activity and maintain organized
+records.
+</p>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Income tracking is generally easier when performed throughout the year
+rather than all at once.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Modern musicians often earn income from many different sources. Live
+performances, teaching, session work, merchandise sales, streaming revenue,
+royalties, licensing agreements, and content creation can all contribute to
+the financial success of a music business.
+</p>
+
+<p>
+Understanding where income comes from—and tracking each source separately—
+can help musicians stay organized, better understand their business, and
+prepare for the future with greater confidence.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
