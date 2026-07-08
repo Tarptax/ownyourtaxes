@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="understanding-profit-vs-revenue-banner.jpg" alt="Own Your Taxes">
+</div>
+
+<p>
+One of the most common financial misunderstandings among small business
+owners, freelancers, musicians, online sellers, contractors, and gig
+workers is confusing revenue with profit.
+</p>
+
+<p>
+While the terms are often used interchangeably in everyday conversation,
+they mean very different things. Understanding the difference can help
+business owners make better decisions, evaluate performance more accurately,
+and gain a clearer understanding of their financial situation.
+</p>
+
+<hr>
+
+<h2>What Is Revenue?</h2>
+
+<p>
+Revenue is the total amount of money a business receives from its operations
+before considering expenses.
+</p>
+
+<p>
+In simple terms, revenue is the money that comes in.
+</p>
+
+<p>
+Examples of revenue may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Client payments</li>
+    <li>Product sales</li>
+    <li>Lesson income</li>
+    <li>Performance income</li>
+    <li>Gig work earnings</li>
+    <li>Online sales</li>
+</ul>
+
+<p>
+Revenue is often the first number business owners notice because it reflects
+overall sales activity.
+</p>
+
+<hr>
+
+<h2>What Is Profit?</h2>
+
+<p>
+Profit is the amount of money remaining after business expenses have been
+considered.
+</p>
+
+<p>
+Profit is not simply what you earn—it is what remains after the costs of
+operating the business are taken into account.
+</p>
+
+<p>
+Examples of expenses may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Supplies</li>
+    <li>Advertising</li>
+    <li>Software subscriptions</li>
+    <li>Equipment purchases</li>
+    <li>Shipping costs</li>
+    <li>Vehicle expenses</li>
+    <li>Insurance</li>
+</ul>
+
+<hr>
+
+<h2>A Basic Example</h2>
+
+<p>
+Imagine an online seller receives $5,000 in sales during a month.
+</p>
+
+<p>
+That $5,000 represents revenue.
+</p>
+
+<p>
+However, if the seller spent money on:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory</li>
+    <li>Shipping</li>
+    <li>Marketplace fees</li>
+    <li>Advertising</li>
+</ul>
+
+<p>
+the amount remaining after those business costs would be the business
+profit.
+</p>
+
+<p>
+This illustrates why revenue and profit should never be viewed as the same
+number.
+</p>
+
+<hr>
+
+<h2>Why the Difference Matters</h2>
+
+<p>
+Understanding profit versus revenue can help business owners:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Evaluate business performance.</li>
+    <li>Monitor spending.</li>
+    <li>Improve budgeting.</li>
+    <li>Make better purchasing decisions.</li>
+    <li>Understand business growth more accurately.</li>
+</ul>
+
+<p>
+A business with high revenue does not automatically have high profit.
+</p>
+
+<hr>
+
+<h2>Common Examples</h2>
+
+<h3>Musicians</h3>
+
+<p>
+A musician may earn revenue from:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Performances</li>
+    <li>Lessons</li>
+    <li>Royalties</li>
+    <li>Merchandise sales</li>
+</ul>
+
+<p>
+However, travel costs, equipment purchases, merchandise expenses, and other
+business costs can affect overall profit.
+</p>
+
+<h3>Online Sellers</h3>
+
+<p>
+Many online sellers focus on sales volume without considering:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Inventory costs</li>
+    <li>Shipping expenses</li>
+    <li>Marketplace fees</li>
+    <li>Advertising expenses</li>
+</ul>
+
+<p>
+Revenue may appear impressive, but profit often tells the more important
+story.
+</p>
+
+<h3>Contractors and Freelancers</h3>
+
+<p>
+Contractors may receive substantial client payments throughout the year.
+</p>
+
+<p>
+Business expenses such as software, equipment, vehicle costs, and
+professional services can influence actual profitability.
+</p>
+
+<hr>
+
+<h2>Why Revenue Can Be Misleading</h2>
+
+<p>
+Many business owners naturally focus on sales because sales are easy to
+measure.
+</p>
+
+<p>
+For example:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>More clients</li>
+    <li>More customers</li>
+    <li>More orders</li>
+    <li>More projects</li>
+</ul>
+
+<p>
+While growth is generally positive, increasing revenue without understanding
+expenses can create an incomplete picture of business performance.
+</p>
+
+<hr>
+
+<h2>Track Both Numbers</h2>
+
+<p>
+Successful business owners often monitor both revenue and profit regularly.
+</p>
+
+<p>
+Monthly reviews may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Total income received</li>
+    <li>Total business expenses</li>
+    <li>Major spending categories</li>
+    <li>Overall business performance</li>
+</ul>
+
+<p>
+Reviewing both numbers together can provide better insight than looking at
+revenue alone.
+</p>
+
+<hr>
+
+<h2>Common Mistakes</h2>
+
+<h3>"Sales Equal Profit"</h3>
+
+<p>
+Many new business owners assume sales automatically represent earnings.
+Business expenses are an important part of the equation.
+</p>
+
+<h3>"More Revenue Means More Success"</h3>
+
+<p>
+Revenue growth is important, but understanding profitability often provides
+a clearer measure of business performance.
+</p>
+
+<h3>"I Don't Need to Track Expenses"</h3>
+
+<p>
+Without expense tracking, it can be difficult to understand how a business
+is truly performing.
+</p>
+
+<h3>"I Only Review My Numbers at Tax Time"</h3>
+
+<p>
+Regular financial reviews can help business owners identify trends and make
+more informed decisions throughout the year.
+</p>
+
+<hr>
+
+<h2>Monthly Financial Review Checklist</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review total revenue.</li>
+    <li>□ Review total expenses.</li>
+    <li>□ Categorize business spending.</li>
+    <li>□ Compare current and prior months.</li>
+    <li>□ Identify large expenses.</li>
+    <li>□ Review overall profitability.</li>
+    <li>□ Update financial records.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Revenue and profit are both important, but they measure different aspects of
+a business. Revenue reflects money coming into the business, while profit
+reflects what remains after expenses are considered.
+</p>
+
+<p>
+Understanding the difference can help business owners make more informed
+decisions, better evaluate performance, and gain a clearer picture of their
+overall financial health.
+</p>
+
+<p>
+The goal is not simply generating revenue—it is building a business that is
+organized, profitable, and sustainable over the long term.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Financial
+situations vary. Consider consulting a qualified professional regarding your
+specific circumstances.
+</p>
+
+<hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>  
