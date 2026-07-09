@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="mileage-tracking-for-gig-workers-banner.jpg" alt="Own Your Taxes">
+</div>
+<h1>Mileage Tracking for Gig Workers</h1>
+
+
+<p>
+For many gig workers, mileage is one of the most important aspects of
+business recordkeeping. Whether you drive for Uber, Lyft, DoorDash,
+Instacart, Spark, Roadie, Shipt, or multiple platforms, maintaining accurate
+mileage records can help you better understand your business activity and
+stay organized throughout the year.
+</p>
+
+<p>
+Because gig work often involves significant driving, building a consistent
+mileage-tracking routine can become one of the most valuable recordkeeping
+habits you develop.
+</p>
+
+<hr>
+
+<h2>Why Mileage Tracking Matters</h2>
+
+<p>
+Many gig workers spend a considerable amount of time on the road while
+earning income.
+</p>
+
+<p>
+Accurate mileage records can help:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track business activity.</li>
+    <li>Maintain organized records.</li>
+    <li>Monitor vehicle usage.</li>
+    <li>Support financial reviews.</li>
+    <li>Prepare for tax season.</li>
+</ul>
+
+<p>
+The best mileage records are typically created as trips occur rather than
+months later.
+</p>
+
+<hr>
+
+<h2>Who Should Track Mileage?</h2>
+
+<p>
+Mileage tracking can be beneficial for a variety of gig workers.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Rideshare drivers</li>
+    <li>Food delivery drivers</li>
+    <li>Grocery delivery shoppers</li>
+    <li>Package delivery drivers</li>
+    <li>Independent couriers</li>
+    <li>Multi-app gig workers</li>
+</ul>
+
+<p>
+Anyone who regularly drives as part of their business activity should
+consider maintaining organized mileage records.
+</p>
+
+<hr>
+
+<h2>What Should a Mileage Log Include?</h2>
+
+<p>
+A mileage log should be simple, consistent, and easy to maintain.
+</p>
+
+<p>
+Common information may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Date of travel</li>
+    <li>Business purpose</li>
+    <li>Starting odometer reading</li>
+    <li>Ending odometer reading</li>
+    <li>Total miles driven</li>
+</ul>
+
+<p>
+Keeping records current is generally easier than trying to reconstruct
+information later.
+</p>
+
+<hr>
+
+<h2>Track Mileage Consistently</h2>
+
+<p>
+One of the most common mistakes gig workers make is waiting until the end of
+the month—or even tax season—to estimate mileage.
+</p>
+
+<p>
+Because gig work can involve frequent driving, small gaps in recordkeeping
+can quickly become difficult to recreate accurately.
+</p>
+
+<p>
+Developing a daily tracking habit can help avoid these problems.
+</p>
+
+<hr>
+
+<h2>Multi-App Drivers Need Strong Records</h2>
+
+<p>
+Many gig workers operate on multiple platforms during the same day.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Uber and Uber Eats</li>
+    <li>DoorDash and Instacart</li>
+    <li>Spark and Roadie</li>
+    <li>Multiple delivery platforms</li>
+</ul>
+
+<p>
+Maintaining a single mileage system can help keep records organized across
+all business activities.
+</p>
+
+<hr>
+
+<h2>Save Supporting Vehicle Records</h2>
+
+<p>
+Mileage logs are often just one part of a broader vehicle recordkeeping
+system.
+</p>
+
+<p>
+Consider organizing:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Fuel receipts</li>
+    <li>Maintenance records</li>
+    <li>Repair invoices</li>
+    <li>Insurance documents</li>
+    <li>Vehicle registration records</li>
+</ul>
+
+<p>
+Keeping related records together can make future reviews easier.
+</p>
+
+<hr>
+
+<h2>Choose a Tracking Method</h2>
+
+<p>
+Gig workers use a variety of tracking methods.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Paper mileage logs</li>
+    <li>Spreadsheets</li>
+    <li>Digital tracking apps</li>
+    <li>Vehicle recordkeeping systems</li>
+</ul>
+
+<p>
+The most effective system is usually the one you can maintain consistently.
+</p>
+
+<hr>
+
+<h2>Review Mileage Monthly</h2>
+
+<p>
+Regular reviews can help ensure records remain complete and organized.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Update mileage logs.</li>
+    <li>□ Review business trips.</li>
+    <li>□ Organize vehicle records.</li>
+    <li>□ Save fuel receipts.</li>
+    <li>□ Review maintenance expenses.</li>
+    <li>□ Back up digital records.</li>
+</ul>
+
+<p>
+Monthly reviews are often easier than year-end catch-up projects.
+</p>
+
+<hr>
+
+<h2>Common Mileage Tracking Mistakes</h2>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to estimate months of driving activity can lead to inaccurate or
+incomplete records.
+</p>
+
+<h3>Relying on Memory</h3>
+
+<p>
+Business trips are easier to document at the time they occur than long after
+the fact.
+</p>
+
+<h3>Ignoring Small Trips</h3>
+
+<p>
+Short business trips can add up significantly over the course of a year.
+</p>
+
+<h3>Not Saving Supporting Records</h3>
+
+<p>
+Vehicle-related documents can help strengthen an overall recordkeeping
+system.
+</p>
+
+<hr>
+
+<h2>Mileage Tracking Checklist for Gig Workers</h2>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Track trips regularly.</li>
+    <li>□ Record dates and destinations.</li>
+    <li>□ Record beginning and ending mileage.</li>
+    <li>□ Maintain a consistent tracking method.</li>
+    <li>□ Save vehicle-related documents.</li>
+    <li>□ Review mileage monthly.</li>
+    <li>□ Organize vehicle records.</li>
+    <li>□ Back up important information.</li>
+</ul>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Mileage tracking is one of the most important recordkeeping responsibilities
+for many gig workers. A consistent system can help improve organization,
+support financial reviews, and make tax season significantly easier.
+</p>
+
+<p>
+The goal is not to create a complicated process. The goal is to develop a
+simple habit that keeps your records accurate, current, and easy to maintain
+throughout the year.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>     
