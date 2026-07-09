@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Own Your Taxes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+        
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: #050505;
+            color: #D1D5DB;
+        }
+              
+.tagline {
+   
+ color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+    letter-spacing: 0;
+    font-size: clamp(24px, 5vw, 60px);
+
+
+}
+        
+h2, h3 {
+    color: #C9A24A;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: #D1D5DB;
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 24px);
+   
+
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #C9A24A;
+}
+
+h5 {
+   font-size: 1.75rem;
+}
+        
+.contact-email {
+    color: #E5E7EB;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+    color: #C9A24A;
+    transform: translateY(-2px);
+}
+
+.author-banner {
+    margin: 40px 0;
+}
+
+.author-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.author-banner img {
+    transition: transform 0.3s ease;
+}
+
+.author-banner img:hover {
+    transform: scale(1.01);
+}
+
+        
+a {
+    color: #C9A24A;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+        
+.banner {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+        
+.book img {
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(212,175,55,.3);
+}
+        
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .book {
+            width: 300px;
+        }
+
+        .book img {
+            height: 450px;
+            width: auto%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        }
+
+       
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+
+        .button:hover {
+            background-color: #C9A24A;
+            color: #000;
+        }
+         .nav-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #C9A24A;
+            background-color: #0b0b0b;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #C9A24A;
+            box-shadow: 0 0 8px rgba(201,162,74,.25);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all .25s ease;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #C9A24A;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .books {
+                gap: 30px;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+        
+            .button {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 14px;
+            }
+        
+             .banner img,
+             .author-banner img {
+               width: 100%;
+               max-width: 100%;
+           }
+
+ 
+
+       
+    </style>
+</head>
+
+<body>
+
+   
+<div style="text-align:center;">
+    <a class="nav-button" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="books.html">Books</a>
+    <a class="nav-button" href="learn.html">Learn</a>
+    <a class="nav-button" href="faq.html">FAQ</a> 
+</div>
+
+
+  
+<div class="banner">
+    <img src="quarterly-taxes-for-freelancers-banner.jpg" alt="Own Your Taxes">
+</div>
+<h1>Quarterly Taxes for Freelancers</h1>
+
+
+
+<p>
+Freelancing offers flexibility, independence, and the opportunity to build a
+business around your skills. However, it also comes with financial
+responsibilities that differ from those of traditional employees. One topic
+many freelancers encounter early in their business journey is quarterly tax
+payments.
+</p>
+
+<p>
+Understanding the basics of quarterly taxes can help freelancers develop
+better financial habits, improve cash flow management, and avoid surprises
+throughout the year.
+</p>
+
+<hr>
+
+<h2>Why Freelancers Should Understand Quarterly Taxes</h2>
+
+<p>
+Unlike traditional employees, freelancers often receive income without taxes
+being withheld from payments.
+</p>
+
+<p>
+As a result, many freelancers take a more active role in monitoring income,
+tracking expenses, organizing records, and planning for future tax
+obligations.
+</p>
+
+<p>
+Developing a quarterly review process can help create greater financial
+awareness and improve overall business organization.
+</p>
+
+<hr>
+
+<h2>Who May Need to Consider Quarterly Taxes?</h2>
+
+<p>
+Freelancers come from a variety of industries and professions.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Writers</li>
+    <li>Designers</li>
+    <li>Photographers</li>
+    <li>Consultants</li>
+    <li>Virtual assistants</li>
+    <li>Coaches</li>
+    <li>Web developers</li>
+    <li>Content creators</li>
+</ul>
+
+<p>
+Regardless of industry, many freelancers benefit from regularly reviewing
+their financial activity throughout the year.
+</p>
+
+<hr>
+
+<h2>Quarterly Reviews Encourage Better Planning</h2>
+
+<p>
+One advantage of thinking in quarterly periods is that it encourages regular
+financial check-ins.
+</p>
+
+<p>
+Quarterly reviews can help freelancers:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Monitor income trends.</li>
+    <li>Review business expenses.</li>
+    <li>Evaluate profitability.</li>
+    <li>Organize records.</li>
+    <li>Maintain financial awareness.</li>
+</ul>
+
+<p>
+Smaller reviews throughout the year are often easier than attempting to
+review an entire year's finances at once.
+</p>
+
+<hr>
+
+<h2>Track Income Throughout the Year</h2>
+
+<p>
+Freelancers often receive payments from multiple clients and projects.
+</p>
+
+<p>
+Consider maintaining records of:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Client payments</li>
+    <li>Invoices issued</li>
+    <li>Payment platform deposits</li>
+    <li>Retainer agreements</li>
+    <li>Project income</li>
+</ul>
+
+<p>
+Maintaining current income records can make quarterly reviews much easier.
+</p>
+
+<hr>
+
+<h2>Review Business Expenses Regularly</h2>
+
+<p>
+Many freelancers incur expenses while operating their business.
+</p>
+
+<p>
+Examples may include:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Software subscriptions</li>
+    <li>Equipment purchases</li>
+    <li>Advertising costs</li>
+    <li>Internet services</li>
+    <li>Professional memberships</li>
+    <li>Office expenses</li>
+</ul>
+
+<p>
+Reviewing expenses throughout the year can help keep records accurate and
+organized.
+</p>
+
+<hr>
+
+<h2>Set Aside Money Consistently</h2>
+
+<p>
+Many freelancers find it helpful to regularly set aside a portion of income
+rather than waiting until the end of the year.
+</p>
+
+<p>
+Developing this habit may help:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Improve budgeting.</li>
+    <li>Reduce financial stress.</li>
+    <li>Support cash flow planning.</li>
+    <li>Create greater financial confidence.</li>
+</ul>
+
+<p>
+Regular planning is often easier than trying to address obligations later.
+</p>
+
+<hr>
+
+<h2>Maintain Organized Financial Records</h2>
+
+<p>
+Strong recordkeeping supports every aspect of freelance financial
+management.
+</p>
+
+<p>
+Consider organizing:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Income records</li>
+    <li>Expense records</li>
+    <li>Bank statements</li>
+    <li>Invoices</li>
+    <li>Receipts</li>
+    <li>Tax documents</li>
+</ul>
+
+<p>
+Keeping financial records updated throughout the year can simplify future
+reviews.
+</p>
+
+<hr>
+
+<h2>Separate Business and Personal Finances</h2>
+
+<p>
+Many freelancers benefit from maintaining dedicated business accounts.
+</p>
+
+<p>
+Separate finances can make it easier to:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Track income.</li>
+    <li>Monitor expenses.</li>
+    <li>Review profitability.</li>
+    <li>Organize bookkeeping.</li>
+    <li>Prepare for tax season.</li>
+</ul>
+
+<p>
+A clear separation between personal and business transactions often reduces
+recordkeeping challenges.
+</p>
+
+<hr>
+
+<h2>Create a Quarterly Financial Checklist</h2>
+
+<p>
+Many freelancers use quarterly reviews to stay organized throughout the
+year.
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>□ Review income received.</li>
+    <li>□ Review business expenses.</li>
+    <li>□ Organize receipts and invoices.</li>
+    <li>□ Review financial records.</li>
+    <li>□ Evaluate profitability.</li>
+    <li>□ Review tax planning needs.</li>
+    <li>□ Update bookkeeping records.</li>
+    <li>□ Back up important documents.</li>
+</ul>
+
+<hr>
+
+<h2>Common Freelancer Mistakes</h2>
+
+<h3>Waiting Until Tax Season</h3>
+
+<p>
+Trying to organize an entire year's worth of records at once can be
+overwhelming and time-consuming.
+</p>
+
+<h3>Not Tracking Income Consistently</h3>
+
+<p>
+Freelancers often work with multiple clients, making organized income
+tracking especially important.
+</p>
+
+<h3>Losing Receipts and Documentation</h3>
+
+<p>
+Supporting records are easier to maintain when organized throughout the
+year.
+</p>
+
+<h3>Ignoring Financial Reviews</h3>
+
+<p>
+Regular reviews can help identify issues before they become larger problems.
+</p>
+
+<hr>
+
+<h2>Benefits of Quarterly Financial Reviews</h2>
+
+<p>
+Freelancers who review their finances regularly often gain a clearer
+understanding of:
+</p>
+
+<ul style="text-align:left; max-width:600px; margin:auto;">
+    <li>Business performance</li>
+    <li>Income trends</li>
+    <li>Expense patterns</li>
+    <li>Cash flow activity</li>
+    <li>Financial goals</li>
+</ul>
+
+<p>
+Consistent reviews can make managing a freelance business significantly
+easier.
+</p>
+
+<hr>
+
+<h2>The Bottom Line</h2>
+
+<p>
+Quarterly taxes are often one of the first financial topics freelancers
+encounter as their business grows. Maintaining organized records, reviewing
+income and expenses regularly, setting aside money consistently, and
+conducting periodic financial reviews can help create a stronger foundation
+for long-term success.
+</p>
+
+<p>
+The goal is not simply preparing for tax season—it is building financial
+habits that support an organized, sustainable, and well-managed freelance
+business throughout the year.
+</p>
+
+<hr>
+
+<p style="font-size:0.9em;">
+<strong>Disclaimer:</strong> This article is provided for educational purposes
+only and should not be considered tax, legal, or financial advice. Tax
+situations vary. Consider consulting a qualified tax professional regarding
+your specific circumstances.
+</p>
+
+ <hr>
+
+<footer style="padding: 20px 0; font-size: 0.9em;">
+
+<p>
+© 2026 Own Your Taxes. All Rights Reserved.
+</p>
+
+<p>
+<a class="contact-email" href="faq.html#disclaimer">Disclaimer</a> |
+<a class="contact-email" href="mailto:contact@ownyourtaxes.com">Contact</a> |
+<a class="contact-email" href="index.html">Home</a>
+</p>
+</footer>
+
+
+</body>
+
+</html>   
+  
