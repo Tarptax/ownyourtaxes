@@ -7,7 +7,7 @@ html {
 
  :root {
          --book-grid-height: 450px;  
-         --book-cover-height: 500px;
+         --book-cover-height: 6500px;
                     
   }
 
@@ -217,8 +217,8 @@ a {
         @media (max-width: 768px) {
             
            :root {
-                --book-grid-height: 325px;
-                --book-cover-height: 425px;
+                --book-grid-height: 125px;
+                --book-cover-height: 225px;
                 }
 
             }
