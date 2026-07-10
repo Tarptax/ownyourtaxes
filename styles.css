@@ -5,6 +5,10 @@ html {
     text-size-adjust: 100%;
 }
 
+ :root {
+             --book-cover-height: 500px;
+        }
+
 * {
     box-sizing: border-box;
 }
@@ -143,14 +147,14 @@ a {
             flex-wrap: wrap;
             margin-top: 30px;
         }
-
+        
         .book {
             width: 300px;
         }
 
         .book img {
-            height: 450px;
-            width: auto%;
+            height: var(--book-cover-height);
+            width: auto;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,.2);
         }
