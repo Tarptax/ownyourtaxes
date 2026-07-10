@@ -7,7 +7,8 @@ html {
 
  :root {
              --book-cover-height: 500px;
-        }
+             --book-grid-height: 450px;         
+  }
 
 * {
     box-sizing: border-box;
@@ -153,11 +154,23 @@ a {
         }
 
         .book img {
-            height: var(--book-cover-height);
+            height: var(--book-grid-height);
             width: auto;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0,0,0,.2);
         }
+         
+         .book-cover {
+            text-align: center;
+        }
+
+         .book-cover img {
+            height: var(--book-cover-height);
+            width: auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
 
        
         .button {
