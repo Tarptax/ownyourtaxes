@@ -7,7 +7,7 @@ html {
 
  :root {
          --book-grid-height: 450px;  
-         --book-cover-height: 650px;
+         --book-cover-width: 500px;
                     
   }
 
@@ -159,7 +159,7 @@ a {
         }
 
          .book-cover img {
-            height: var(--book-cover-height);
+            height: var(--book-cover-width);
             width: auto;
             max-width: 100%;
             border-radius: 8px;
@@ -218,11 +218,10 @@ a {
             
            :root {
                 --book-grid-height: 325px;
-                --book-cover-height: 425px;
+                --book-cover-width: 425px;
                 }
 
-            }
-           
+                       
             body {
                 padding: 20px;
             }
@@ -264,7 +263,7 @@ a {
                max-width: 100%;
            }
 
- 
+}
 
        
     </style>
