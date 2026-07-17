@@ -226,7 +226,7 @@ a {
         @media (max-width: 768px) {
             
            :root {
-                --book-grid-width: 425px;
+                --book-grid-width: 300px;
                 --book-cover-width: 425px;
                 }
 
