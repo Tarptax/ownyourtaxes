@@ -226,7 +226,7 @@ a {
         @media (max-width: 768px) {
             
            :root {
-                --book-grid-height: 425px;
+                --book-grid-width: 425px;
                 --book-cover-width: 425px;
                 }
 
@@ -248,6 +248,7 @@ a {
             }
             .featured-book img {
                 height: 300px;
+                max-wodth: 320px;
                 margin: 0 auto;
             }
             .book {
