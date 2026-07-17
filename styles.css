@@ -6,8 +6,8 @@ html {
 }
 
  :root {
-         --book-grid-height: 450px;  
-         --book-cover-height: 650px;
+         --book-grid-width: 450px;  
+         --book-cover-width: 650px;
                     
   }
 
@@ -168,7 +168,7 @@ a {
        }
          .featured-book img {
 
-            height: 400px;
+            height: var(--book-grid-width);
             width: auto;
             display: block;
             margin: 0 auto;
@@ -226,8 +226,8 @@ a {
         @media (max-width: 768px) {
             
            :root {
-                --book-grid-height: 300px;
-                --book-cover-height: 425px;
+                --book-grid-width: 300px;
+                --book-cover-width: 425px;
                 }
 
                        
@@ -247,7 +247,8 @@ a {
                 gap: 30px;
             }
             .featured-book img {
-                width: 300px;
+                width: 100%;
+                max-width: 325px;
                 height: auto;
             }
             .book {
