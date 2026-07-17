@@ -247,7 +247,7 @@ a {
                 gap: 30px;
             }
             .featured-book img {
-                width: 100%;
+                width: 80%;
                 max-width: 200px;
                 margin: 0 auto;
             }
