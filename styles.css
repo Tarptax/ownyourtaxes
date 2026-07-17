@@ -248,6 +248,7 @@ a {
             }
             .featured-book img {
                 height: 300px;
+                margin: 0 auto;
             }
             .book {
                 width: 100%;
