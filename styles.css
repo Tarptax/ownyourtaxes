@@ -246,7 +246,9 @@ a {
             .books {
                 gap: 30px;
             }
-
+            .featured-book img {
+                height: 300px;
+            }
             .book {
                 width: 100%;
                 max-width: 320px;
