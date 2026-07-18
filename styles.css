@@ -168,7 +168,7 @@ a {
        }
          .featured-book img {
 
-            height: max-width: 400px;
+            height: var(--book-cover-width);
             width: auto;
             display: block;
             margin: 0 auto;
