@@ -226,27 +226,7 @@ a {
  
         @media (max-width: 768px) {
 
-.book {
 
-border: 5px solid red;
-
-}
-
- 
-
-.book img {
-
-border: 5px solid lime;
-
-}
-
- 
-
-.books {
-
-border: 5px solid blue;
-
-}
             
            :root {
                 --book-grid-width: 375px;
